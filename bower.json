@@ -1,0 +1,17 @@
+{
+  "name": "craft2es.github.io",
+  "homepage": "https://github.com/craft2es/craft2es.github.io",
+  "authors": [
+    "Davo <davidgalavotti@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

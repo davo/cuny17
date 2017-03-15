@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?><transcript><text start="5.05" dur="3.36">hey whats up this is scott with level of
+tons and today we&amp;#39;re going to be moving</text><text start="8.41" dur="6.54">on to creating your first html5 site and
+if you use HTML before this code right</text><text start="14.95" dur="2.7">here might look a little familiar to you</text><text start="17.65" dur="5.969">we have just a doctype and it&amp;#39;s given
+the type of dr. Pitt is were using of</text><text start="23.619" dur="6.331">HTML 4 . help one and and basically this
+is gonna look pretty familiar because</text><text start="29.95" dur="4.83">this is probably how you made websites I
+mean especially with HTML right and then</text><text start="34.78" dur="3.509">we have things like our meta tags are
+script in our style sheets that sort of</text><text start="38.289" dur="3.75">stuff and then we have our body tags
+like normal</text><text start="42.039" dur="4.5">so this is all looking pretty normal i
+mean there&amp;#39;s nothing crazy here right</text><text start="46.539" dur="4.5">in fact I actually just grab this you
+know from some project building site i</text><text start="51.039" dur="4.23">don&amp;#39;t really have a site going here i&amp;#39;m
+actually going to get rid of some of</text><text start="55.269" dur="7.141">this stuff here just so we can keep this
+bare-bones ok and I&amp;#39;m going to get rid</text><text start="62.41" dur="4.23">of the comment on the script so we can
+see how exactly this stuff is going to</text><text start="66.64" dur="4.29">change so how do we make this into an
+html5 document</text><text start="71.68" dur="4.77">well if you recall you know with the
+doctype up here all we actually have to</text><text start="76.45" dur="3.39">declare html5 doctype is just do</text><text start="79.84" dur="6.51">doctype HTML so it ! doc type in all
+caps in HTML so this is letting your</text><text start="86.35" dur="5.91">browser no to run and standards mode for
+html5 this is the html5 doctype couldn&amp;#39;t</text><text start="92.26" dur="1.5">get in easy to the met</text><text start="93.76" dur="4.38">well what next well we don&amp;#39;t really need
+this link but we can leave it in there</text><text start="98.14" dur="6.78">no big deal and the next thing we want
+to do is we want to define its character</text><text start="104.92" dur="6.99">set well in here your HTML 4 version we
+had to use this http-equiv content-type</text><text start="111.91" dur="6.39">content text HTML with html5 you really
+just need to declare the character set</text><text start="118.3" dur="6.81">here by saying medic character set and
+then utf-8 and we can do that just like</text><text start="125.11" dur="5.789">this here so this is our character set
+metacharacter said and i&amp;#39;m just going to</text><text start="130.899" dur="2.941">get rid of these meta keywords for now
+because they&amp;#39;re just getting in the way</text><text start="133.84" dur="3.01">and our title tag will be</text><text start="136.85" dur="6.27">our html5 site so titles not changing</text><text start="143.12" dur="4.92">that&amp;#39;s the same as it&amp;#39;s always been but
+what about these you know these link</text><text start="148.04" dur="4.8">types and i&amp;#39;m making this fabric on one
+as well here so now we just have a link</text><text start="152.84" dur="6.24">that&amp;#39;s hooking up your style sheet and
+we have our script tag that&amp;#39;s hooking up</text><text start="159.08" dur="5.01">our JavaScript well in the past we&amp;#39;ve
+had to do type equals text/javascript</text><text start="164.09" dur="4.5">than the source and then starts with
+what I mean it makes sense that if we&amp;#39;re</text><text start="168.59" dur="4.47">using a script tag absence javascript is
+the primary scripting language on the</text><text start="173.06" dur="4.83">web why wouldn&amp;#39;t this always be
+text/javascript so with html5 we can</text><text start="177.89" dur="4.14">completely omit that and now we just
+have to say script and then link it with</text><text start="182.03" dur="5.94">the source and the same thing is with
+this style sheet here we also don&amp;#39;t have</text><text start="187.97" dur="7.26">to specify anything other than the
+relationship and then the hof so we can</text><text start="195.23" dur="6.39">get rid of media screen we can get rid
+of type text CSS just like this and this</text><text start="201.62" dur="9.15">is it so it&amp;#39;s nice and bare bones here
+so this is our html5 site now if you&amp;#39;ll</text><text start="210.77" dur="3.63">notice we can put anything in the body
+here at and they could be just normal</text><text start="214.4" dur="8.25">gives you know just normal everything
+right and this is going to be rendering</text><text start="222.65" dur="4.89">just perfect let&amp;#39;s throw this open in a
+browser right now so you can see it in</text><text start="227.54" dur="5.01">action and it&amp;#39;s just going to be a
+pretty standard HTML site here</text><text start="232.55" dur="6.09">alright so here we have it here&amp;#39;s our
+page and it&amp;#39;s nothing crazy but your</text><text start="238.64" dur="4.65">browser now knows that this is using
+html5 and everything should be all good</text><text start="243.98" dur="4.86">so as you can see it&amp;#39;s really not hard
+to get started with html5 there&amp;#39;s</text><text start="248.84" dur="2.19">nothing crazy there&amp;#39;s nothing stopping
+you</text><text start="251.03" dur="5.61">so by all means start writing some HTML
+and all you have to do is specify</text><text start="256.64" dur="6.03">doctype HTML and bam you know it&amp;#39;s html5
+this is the new doctype it&amp;#39;s super easy</text><text start="262.67" dur="6.749">so you may be surprised but this is all
+we need to start an html5 site and this</text><text start="269.419" dur="0.931">is your</text><text start="270.35" dur="3.48">first html5 site done perfect</text><text start="273.83" dur="3.9">well well this is nice and short you
+know these videos might be a little</text><text start="277.73" dur="2.58">short and being here because there&amp;#39;s a
+lot of little things but you know</text><text start="280.31" dur="1.32">there&amp;#39;s nothing crazy here</text><text start="281.63" dur="3.99">so in the next video we&amp;#39;re going to
+start going over some of the new</text><text start="285.62" dur="4.11">elements and we&amp;#39;re going to be
+introducing you to some of the elements</text><text start="289.73" dur="3.03">are going to be using quite frequently
+and we&amp;#39;re not going to go into all the</text><text start="292.76" dur="3.66">details but the basic usage of them and
+then later on we&amp;#39;re going to come back</text><text start="296.42" dur="3.84">and show you all the cool usages of
+everything so as always this is scott</text><text start="300.26" dur="2.67">love touch if you have any questions or
+comments leave a bit</text><text start="302.93" dur="4.11">come on the video or hit us up at
+Twitter level of tubs on facebook or</text><text start="307.04" dur="4.14">pretty much anywhere we love hearing
+from you you know we can always get to</text><text start="311.18" dur="4.5">your questions because like i said this
+is not our are full-time gig this is a a</text><text start="315.68" dur="5.22">app you know after working weekends
+thing so by all means please ask away</text><text start="320.9" dur="4.56">and if community members can help you
+answer that that&amp;#39;s really appreciated</text><text start="325.46" dur="5.73">but we cannot get to all the questions
+but we do love hearing from you so as</text><text start="331.19" dur="3.09">always thanks for watching this is scott
+and have a good one bye</text></transcript>

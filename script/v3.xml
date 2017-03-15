@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?><transcript><text start="5.1" dur="4.38">hey whats up this is scott level of tons
+in the last video we left off by</text><text start="9.48" dur="5.219">creating this really basic html5
+document and now we're going to start</text><text start="14.699" dur="4.801">filling it with some of the new elements
+the new tags them we can now use with</text><text start="19.5" dur="4.47">html5 and some of these tax really don't
+have a whole lot of meaning other than</text><text start="23.97" dur="3.75">just semantic meaning where we're going
+to be using them at where we would</text><text start="27.72" dur="4.71">normally use a div or something but a
+diff doesn't have any sort of semantic</text><text start="32.43" dur="4.92">meaning it's just a you know it's just
+the noting some sort of you know content</text><text start="37.35" dur="5.849">there's no meaning there so we're html5
+really succeeds is having a lot of</text><text start="43.199" dur="4.98">options for tags with semantic meaning
+that you know is going to help us out</text><text start="48.78" dur="7.109">so first one is the header tag and now
+we're going to wrap our h1 and this is</text><text start="55.889" dur="4.02">going to be the header of our page we're
+going to wrap this and just a tag that</text><text start="59.909" dur="6.541">just says header and this isn't going to
+do too much it's gonna be just like it</text><text start="66.45" dur="5.129">did except for its gonna let you know
+the browser know that this is the header</text><text start="71.579" dur="6.241">right so you may be asking yourself so
+you just use this tag once and that's</text><text start="77.82" dur="5.189">the header well no not exactly looking
+over the specifics more unknown entire</text><text start="83.009" dur="4.771">video real you know about header itself
+but header can be used as the just</text><text start="87.78" dur="7.079">header of content so maybe your blog
+post title has a header on itself but</text><text start="94.859" dur="7.62">for entire document we're using this
+header tag the next one is section and</text><text start="102.479" dur="5.041">section is also just like a div tag and
+the thing about section is is it's</text><text start="107.52" dur="4.65">really just grouping content together
+and it's saying that this content is</text><text start="112.17" dur="1.17">related</text><text start="113.34" dur="7.08">this is a section of the site and we're
+going to have this be the section and</text><text start="120.42" dur="3">it's going to be class equals</text><text start="125.03" dur="4.979">main content and I'm just doing this
+because this section is going to be the</text><text start="130.009" dur="5.551">main content section so that's really
+what it is so that's no you know it's</text><text start="135.56" dur="1.2">nice and easy</text><text start="136.76" dur="5.52">in fact i'm going to grab some hipster
+ipsum text just to throw in here just</text><text start="142.28" dur="3.87">one paragraph just so we have some stuff
+okay</text><text start="146.84" dur="4.59">and just like that</text><text start="151.43" dur="4.23">ok let's check out our pages see how
+it's doing ok you know it's nothing is</text><text start="155.66" dur="4.41">really changing nothing is crazy here we
+have our header we have our section cool</text><text start="160.07" dur="5.76">so these two new tags are really that
+exciting so far and affect the third one</text><text start="165.83" dur="5.46">is going to be the same level excitement
+is going to be footer and just like the</text><text start="171.29" dur="6">header and the section foot really
+doesn't have any stylistic purpose or</text><text start="177.29" dur="5.19">anything its meaning is purely semantics
+and that's a great news for us because</text><text start="182.48" dur="6.15">now your browser knows what content is
+in your footer and this maybe is going</text><text start="188.63" dur="4.199">to allow it to prioritize that
+information whether it's for SEO</text><text start="192.829" dur="6.151">purposes or accessibility that kind of
+thing so we just had an unordered list</text><text start="198.98" dur="10.47">with five list items in it and I'm
+actually just going to fill these in</text><text start="209.45" dur="7.68">with just some tests just so we have
+something here that's a little bit like</text><text start="217.13" dur="3">what we would have a normal sight</text><text start="223.56" dur="5.91">ok so let's check out our page once more
+and you'll be unsurprised to see</text><text start="229.47" dur="4.95">nothing's changed you know we don't have
+anything crazy going on and just like</text><text start="234.42" dur="4.2">the header element the fire element does
+not just mean the footer of your page</text><text start="238.62" dur="6.51">it means the footer of the area of
+content so maybe you have a footer to</text><text start="245.13" dur="6.45">your blog post that has meta information
+or something like that that would also</text><text start="251.58" dur="6.45">be included in this and we have another
+tag it's called a side and aside is</text><text start="258.03" dur="5.28">going to be used for content that isn't
+your main content it's your ass I'd</text><text start="263.31" dur="3.78">content side content doesn't mean that
+it's a sidebar something like that it</text><text start="267.09" dur="4.5">just means that it's not your main
+content that sort of secondary to your</text><text start="271.59" dur="6.18">main content it's just you know it's a
+side so we can say is side right here</text><text start="277.77" dur="5.1">and we're going to have not just throw a
+little bit of this paragraph in here and</text><text start="282.87" dur="3">here we go</text><text start="288.24" dur="6.51">ok and notice nothing really changes
+it's just another block level element as</text><text start="294.75" dur="6.21">usual but it does let your browser know
+that this content isn't as important as</text><text start="300.96" dur="3.78">the stuff in your main content section
+or other places on your site and it</text><text start="304.74" dur="3.06">could give it an insight as to what
+could possibly be there</text><text start="308.76" dur="6.15">ok so here we showed you for new tags of
+which are purely semantics but that's</text><text start="314.91" dur="4.92">one of the great things about html5 is
+that it's offering that possibility</text><text start="319.83" dur="4.02">where before every single one of these
+would have been a div with a class of</text><text start="323.85" dur="4.8">something and looking at the HTML
+wouldn't really have told you a ton</text><text start="328.65" dur="5.639">about what that content is in the
+structure of your site it says HTML is</text><text start="334.289" dur="4.201">all about structure this is absolutely
+perfect in some of the greatest things</text><text start="338.49" dur="3.27">about html5 so check it out</text><text start="341.76" dur="4.65">play around with them and we're going to
+be building a more complex example like</text><text start="346.41" dur="4.77">a blog in later videos and you can see
+how these tags are used in other context</text><text start="351.18" dur="1.65">so check it out</text><text start="352.83" dur="2.64">as always if you have any questions or
+comments with the kind of the video hit</text><text start="355.47" dur="0.99">us up twitter love</text><text start="356.46" dur="4.26">luv touch on facebook or just anything
+as always this is scheduling ski with</text><text start="360.72" dur="1.319">level of tons and thanks for watching</text></transcript>
