@@ -58,6 +58,7 @@ h2 {
   font-size: 4rem;
   font-weight: 100;
   line-height: 1.25;
+  padding-left: 28px;
 }
 h3 {
   font-size: 3.0rem;
@@ -68,6 +69,7 @@ p {
   width: 80%;
   color: #323333;
   line-height: 2.4rem;
+  padding-left: 28px;
 }
 
 /* Links
@@ -83,6 +85,15 @@ header {
   background-color: #003F97;
   position: fixed;
   width: 100%;
+  transition: all 360ms ease-out;
+  opacity: 0;
+  -webkit-transform: translateY(-16px);
+}
+
+header.show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transition-delay: 380ms;
 }
 
 header a {
@@ -109,16 +120,34 @@ section {
   width: 76%;
   color: white;
   background-color: #003F97;
-  padding: 15% 20% 15% 28px;
+  padding: 15% 20% 15% 4%;
 }
 
 .historia {
-  padding-left: 28px;
 }
 
 .historia h2 {
   color: #003F97;
   padding-bottom: 80px;
+}
+
+.barchart {
+  width: 90%;
+  padding: 0 5% 0 5%;
+
+}
+
+@media (min-width: 1000px) {
+  section {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .barchart {
+    width: 880px;
+    padding: 40px;
+  }
+
 }
 
 /* Media Queries

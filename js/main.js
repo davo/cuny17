@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  // Escondo el header del documento
-  $('header').hide();
 
   var sectionHistoria = $('.historia');
   // console.log(sectionHistoria);
@@ -15,9 +13,9 @@ $(document).ready(function() {
 
   $(document).scroll(function() {
     if (margenSuperior <= $(document).scrollTop()) {
-      $('header').show();
+      $('header').addClass('show');
     } else {
-      $('header').hide();
+      $('header').removeClass('show');
     }
     // console.log($(document).scrollTop())
 
