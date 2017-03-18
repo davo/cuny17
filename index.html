@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Fundamentos de HTML 5</title>
+		<title>Intro a HTML 5, CSS 3 y JavaScript</title>
 
 		<link rel="stylesheet" href="components/reveal.js/css/reveal.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -16,19 +16,79 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-                    <h1>Introducción a HTML 5, CSS 3 y JavaScript</h1>
+				<section style="text-align: left;" data-menu-title="Intro">
+                    <h1>Intro a HTML 5,<br />CSS 3 y<br />JavaScript</h1>
                     <p>CUNY 2017</p>
                 </section>
-				<section>
+                <section style="text-align: left;">
+                    <p>Tabla de contenidos</p>
+                    <ul>
+                        <li class="fragment">HTML 5
+                            <ul>
+                                <li class="fragment">Repaso acerca de HTML</li>
+                                <li class="fragment">Intro a HTML 5</li>
+                                <li class="fragment"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+				<section style="text-align: left;" >
                     <p>Declaración de tipo de documento en HTML 4.01</p>
                     <pre><code class="hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
     "-//W3C//DTD XHTML 1.0 Transitional//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
                 </section>
-                <section>
+                <section style="text-align: left;" >
                     <p>Misma declaración en HTML 5</p>
-                    <pre><code class="hljs" data-trim contenteditable>&lt;!DOCTYPE html&gt;</code></pre>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+                    &lt;!DOCTYPE html&gt;
+
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code>&lt;!DOCTYPE html>
+    &lt;!html lang="en">
+
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;title>&lt;/title>
+    &lt;/head>
+
+    &lt;body>
+    &lt;!-- tu increíble contenido va acá -->
+    &lt;/body>
+&lt;/html></code></pre>
+                </section>
+                <section>
+                    <pre><code>&lt;!DOCTYPE html>
+    &lt;!html>
+
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;title>&lt;/title>
+    &lt;/head>
+
+    &lt;body>
+    &lt;!-- tu increíble contenido va acá -->
+    &lt;/body>
+&lt;/html></code></pre>
+                </section>
+
+                
+
+                <section>
+                    <ul>
+                        <li>
+                            <h3>Material de referencia</h3>
+                            <ul>
+                                <li>https://css-tricks.com/snippets/css/</li>
+                                <li>http://caniuse.com/</li>
+                                <li>https://www.smashingmagazine.com/learning-css3-useful-reference-guide/</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </section>
 
 			</div>
@@ -41,11 +101,18 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+                // width: "90%",
+                // height: "90%",
+
+                menu: {
+                    themes: false
+                },
+
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
+                    { src: 'components/reveal.js-menu/menu.js' },
 					{ src: 'components/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'components/reveal.js/plugin/markdown/markdown.js' },
 					{ src: 'components/reveal.js/plugin/notes/notes.js', async: true },
 					{ src: 'components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]

@@ -57,7 +57,7 @@ gulp.task('openbrowser', function() {
 gulp.task('watch', function() {
   gulp.watch('assets/css/*.scss', ['styles']);
   gulp.watch('*.html', notifyLiveReload);
-  gulp.watch('assets/css/*.css', notifyLiveReload);
+  gulp.watch('css/*.css', notifyLiveReload);
 });
 
 gulp.task('default', ['styles', 'livereload', 'watch', 'webserver', 'openbrowser'], function() {

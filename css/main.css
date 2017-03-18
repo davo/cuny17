@@ -1,3 +1,13 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Fonts
+- Global Styles
+- Links
+- Layout
+- Media Queries
+*/
+
+
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is darkblue.
@@ -6,11 +16,19 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
- @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 
 
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
+
+
+
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
 
 /*********************************************
  * GLOBAL STYLES
@@ -26,6 +44,15 @@ body {
   font-size: 40px;
   font-weight: normal;
   color: #000; }
+
+.reveal .slide-menu {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.reveal .slide-menu-item.no-title .slide-menu-item-title, 
+.reveal .slide-menu-item-vertical.no-title .slide-menu-item-title {
+  font-style: normal !important;
+}
 
 ::selection {
   color: #fff;
@@ -62,7 +89,9 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 2.77em;
+  font-weight: 100;
+}
 
 .reveal h2 {
   font-size: 2.11em; }
@@ -121,7 +150,15 @@ body {
 .reveal ol ol,
 .reveal ol ul {
   display: block;
-  margin-left: 40px; }
+  margin-left: 40px;
+  margin-top: 10px;
+
+}
+
+.reveal li {
+  font-size: 0.76em;
+  line-height: 1.4em;
+}
 
 .reveal dt {
   font-weight: bold; }
@@ -254,6 +291,10 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-color: #00008B;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+.reveal pre {
+  width: 100%;
+}
 
 /*********************************************
  * NAVIGATION CONTROLS
