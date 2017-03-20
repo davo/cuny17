@@ -97,14 +97,14 @@ body {
   font-size: 1.8em;
   line-height: 1.6em;
   font-weight: 100;
-  width: 70%;
+  width: 80%;
 }
 
 .reveal h3 {
-  font-size: 1.55em;
+  font-size: 1.4em;
   line-height: 1.6em;
-  font-weight: 100;
-  width: 70%;
+  font-weight: 300;
+  width: 80%;
 }
 
 .reveal h4 {
@@ -120,9 +120,10 @@ body {
  *********************************************/
 .reveal p {
   margin: 20px 0;
-  line-height: 1.4em;
+  font-size: 0.79em;
+  line-height: 1.5em;
   font-weight: 100;
-  width: 70%;
+  width: 80%;
 }
 
 /* Ensure certain elements are never larger than the slide itself */

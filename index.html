@@ -22,30 +22,104 @@
                 </section>
 
                 <section style="text-align: left;">
-                    <h2>Introducción</h2>
-                    <p>HyperText Markup Language (HTML), Cascading Style Sheets (CSS), y JavaScript son los principales lenguajes que hacen que la web funcione.</p>
+                    <section>
+                        <h2>Parte I</h2>
+                        <ul>
+                            <li><h3>Introducción</h3></li>
+                            <li><h3>Creando una página web básica</h3></li>
+                            <li><h3>Links e imágenes</h3></li>
+                            <li><h3>Hola, CSS</h3></li>
+                            <li><h3>El Box Model</h3></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Parte II</h2>
+                        <ul>
+                            <li><h3>Selectores CSS</h3></li>
+                            <li><h3>Diseño con elementos flotantes</h3></li>
+                            <li><h3>Posicionamiento de elementos</h3></li>
+                            <li><h3>Un adelanto de Flex</h3></li>
+                            <li><h3>Diseño responsivo</h3></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Introducción</h3>
+                        <ul>
+                            <li>Repaso acerca de HTML</li>
+                            <li>Intro a HTML 5</li>
+                            <li></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Creando una página web básica</h3>
+                        <ul>
+                            <li>Setup</li>
+                            <li>Estructura de una página web</li>
+                            <li>Titulos</li>
+                            <li>Párrafos</li>
+                            <li>Encabezados</li>
+                            <li>Listas</li>
+                            <li>Estilos en linea</li>
+                            <li>Estructura vs Presentación</li>
+                            <li>Elementos HTML vacíos</li>
+                            <li>Resumen</li>
+                        </ul>
+                    </section>
                 </section>
-                <section style="text-align: left;">
-                    <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
-                </section>
-                <section style="text-align: left;">
-                    <p><span>HTML</span> es para agregar significado a tu contenido, dandole marcado (markup).</p>
-                </section>
-                <section style="text-align: left;">
-                    <p><span>CSS</span> es para darle formato (estilo) al contenido marcado.</p>
-                </section>
-                <section style="text-align: left;">
-                    <p><span>JavaScript</span> es para darle interacción al formato y el contenido marcado.</p>
+                <section>
+                    <section style="text-align: left;">
+                        <h2>Introducción</h2>
+                        <p>HyperText Markup Language (HTML), Cascading Style Sheets (CSS), y JavaScript son los principales lenguajes que hacen que la web funcione.</p>
+                    </section>
+                    <section style="text-align: left;">
+                        <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
+                    </section>
+                    <section style="text-align: left;">
+                        <p><span>HTML</span> es para agregar significado a tu contenido, dandole marcado (markup).</p>
+                    </section>
+                    <section style="text-align: left;">
+                        <p><span>CSS</span> es para darle formato (estilo) al contenido marcado.</p>
+                    </section>
+                    <section style="text-align: left;">
+                        <p><span>JavaScript</span> es para darle interacción al formato y el contenido marcado.</p>
+                    </section>
+                    <section>
+                        <img src="images/html-css-javascript-905348.png">
+                    </section>
+                    <section style="text-align: left;">
+                        <h2>¿Cómo funciona cada uno?</h2>
+                    </section>
+                    <section style="text-align: left;">
+                        <h3>HTML</h3>
+                        <p>Puedes marcar una ejecución particular de texto como un párrafo con este HTML:</p>
+                        <pre><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
+                    </section>
+                    <section style="text-align: left;">
+                        <h3>CSS</h3>
+                        <p>Luego, puedes especificar el tamaño y color del párrafo con algo de CSS:</p>
+                        <pre><code class="css">p {
+      font-size: 20px;
+      color: blue;
+    }</code></pre>
+                    </section>
+                    <section style="text-align: left;" >
+                        <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea con algo de JavaScript</p>
+                        <pre><code class="javaScript">var p = document.getElementById('parrafo');
+
+        p.addEventListener('click', function(event) {
+          p.innerHTML = 'Hiciste click en este párrafo.';
+        });</code></pre>
+                    </section>
                 </section>
 				<section style="text-align: left;" >
+                    <h3>Simplificación</h3>
                     <h4>Declaración de tipo de documento en HTML 4.01</h4>
-                    <pre><code class="hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
+                    <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
     "-//W3C//DTD XHTML 1.0 Transitional//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
-                </section>
-                <section style="text-align: left;" >
+                    <br>
                     <h4>Declaración de tipo de documento en HTML 5</h4>
-                    <pre><code class="hljs" data-trim contenteditable>
+                    <pre><code class="html hljs" data-trim contenteditable>
 
                     &lt;!DOCTYPE html&gt;
 
@@ -53,9 +127,8 @@
                 </section>
 
                 <section>
-                    <pre><code>&lt;!DOCTYPE html>
-    &lt;!html lang="en">
-
+                    <pre><code class="html hljs">&lt;!DOCTYPE html>
+&lt;html lang="en">
     &lt;head>
         &lt;meta charset="UTF-8">
         &lt;title>&lt;/title>
@@ -66,20 +139,7 @@
     &lt;/body>
 &lt;/html></code></pre>
                 </section>
-                <section>
-                    <pre><code>&lt;!DOCTYPE html>
-    &lt;!html>
-
-    &lt;head>
-        &lt;meta charset="UTF-8">
-        &lt;title>&lt;/title>
-    &lt;/head>
-
-    &lt;body>
-    &lt;!-- tu increíble contenido va acá -->
-    &lt;/body>
-&lt;/html></code></pre>
-                </section>
+                
 
                 
 
