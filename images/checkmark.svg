@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="24px" viewBox="0 0 39 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checkmark">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="39" height="24"></rect>
+            <path d="M21.865,10 C21.6945235,10.0048956 21.5505832,10.069861 21.475,10.2 C15.3988676,16.3913799 14.6379545,17.3270513 11.14,21 L7.045,16.8 C6.95052999,16.615196 6.72827697,16.542568 6.46,16.6 C6.30545215,16.647395 6.13992701,16.8161612 6.07,17 C6.03475529,17.2496693 6.10382607,17.4784789 6.265,17.6 L10.75,22.2 C10.8274219,22.3365511 10.9762123,22.4 11.14,22.4 C11.28656,22.4 11.4353503,22.3365511 11.53,22.2 C15.5411264,18.1190362 15.9460345,17.5282804 22.255,11 C22.4455776,10.8585061 22.4979793,10.5939402 22.45,10.4 C22.309249,10.1370062 22.0876167,9.99184903 21.865,10 L21.865,10 Z" stroke="#003F97" fill="#003F97" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,22 +1,22 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Intro a HTML 5, CSS 3 y JavaScript</title>
+        <title>Intro a HTML 5, CSS 3 y JavaScript</title>
 
-		<link rel="stylesheet" href="components/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="components/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="css/main.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="components/highlight/src/styles/xcode.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="components/highlight/src/styles/xcode.css">
 
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section style="text-align: left;" data-menu-title="Intro">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section style="text-align: left;" data-menu-title="Intro">
                     <h1>Introdución a<br>HTML 5, CSS 3<br />y JavaScript</h1>
                     <p>CUNY 2017</p>
                 </section>
@@ -34,7 +34,7 @@
                     </section>
                     <section>
                         <h2>Parte II</h2>
-                        <ul>
+                        <ul class="checkmark">
                             <li><h4>Selectores CSS</h4></li>
                             <li><h4>Posicionamiento y elementos flotantes</h4></li>
                             <li><h4>Un adelanto de Flex</h4></li>
@@ -56,28 +56,33 @@
                         </ul>
                     </section>
                 </section>
-                <section>
+                <section style="text-align: left;">
                      <section>
                         <h3>Introducción</h3>
                         <ul>
-                            <li>Repaso acerca de HTML</li>
-                            <li>Intro a HTML 5</li>
+                            <li><p>Repaso acerca de HTML</p></li>
+                            <li><p>Intro a HTML 5</p></li>
                             <li></li>
                         </ul>
                     </section>
                     <section>
-                        <h3>Creando una página web básica</h3>
+                        <h3>Creando una página web básica I</h3>
                         <ul>
-                            <li>Setup</li>
-                            <li>Estructura de una página web</li>
-                            <li>Titulos</li>
-                            <li>Párrafos</li>
-                            <li>Encabezados</li>
-                            <li>Listas</li>
-                            <li>Estilos en linea</li>
-                            <li>Estructura vs Presentación</li>
-                            <li>Elementos HTML vacíos</li>
-                            <li>Resumen</li>
+                            <li><p>Setup</p></li>
+                            <li><p>Estructura de una página web</p></li>
+                            <li><p>Titulos</p></li>
+                            <li><p>Párrafos</p></li>
+                            <li><p>Encabezados</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Creando una página web básica II</h3>
+                        <ul>
+                            <li><p>Listas</p></li>
+                            <li><p>Estilos en línea</p></li>
+                            <li><p>Estructura vs Presentación</p></li>
+                            <li><p>Elementos HTML vacíos</p></li>
+                            <li><p>Resumen</p></li>
                         </ul>
                     </section>
                 </section>
@@ -126,7 +131,7 @@
         });</code></pre>
                     </section>
                 </section>
-				<section style="text-align: left;" >
+                <section style="text-align: left;" >
                     <h3>Simplificación</h3>
                     <h4>Declaración de tipo de documento en HTML 4.01</h4>
                     <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
@@ -171,32 +176,30 @@
                     </ul>
                 </section>
 
-			</div>
-		</div>
+            </div>
+        </div>
 
-		<script src="components/reveal.js/lib/js/head.min.js"></script>
-		<script src="components/reveal.js/js/reveal.js"></script>
+        <script src="components/reveal.js/lib/js/head.min.js"></script>
+        <script src="components/reveal.js/js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-                // width: "90%",
-                // height: "90%",
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
 
                 menu: {
                     themes: false
                 },
 
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
                     { src: 'components/reveal.js-menu/menu.js' },
-					{ src: 'components/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'components/reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                    { src: 'components/reveal.js/plugin/markdown/marked.js' },
+                    { src: 'components/reveal.js/plugin/notes/notes.js', async: true },
+                    { src: 'components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>

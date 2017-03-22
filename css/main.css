@@ -81,7 +81,6 @@ body {
   margin: 0 0 20px 0;
   color: #000;
   font-family: "Roboto", Impact, sans-serif;
-  font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
@@ -89,12 +88,12 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.27em;
+  font-size: 2em;
   font-weight: 100;
 }
 
 .reveal h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.6em;
   font-weight: 100;
   width: 80%;
@@ -126,12 +125,16 @@ body {
   width: 80%;
 }
 
+.reveal li p {
+  width: 100%;
+}
+
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+  max-width: 80%;
+  max-height: 80%; }
 
 .reveal strong,
 .reveal b {
@@ -151,13 +154,17 @@ body {
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  line-height: 1em;
+  list-style-image: url('http://0.0.0.0:8005/images/checkmark.svg');
+}
 
-.reveal ul ul {
-  list-style-type: square; }
+/*.reveal ul ul {
+  list-style-type: square;
+}
 
 .reveal ul ul ul {
-  list-style-type: circle; }
+  list-style-type: circle;
+}
 
 .reveal ul ul,
 .reveal ul ol,
@@ -168,9 +175,8 @@ body {
   margin-top: 10px;
 
 }
-
+*/
 .reveal li {
-  font-size: 0.76em;
   line-height: 1.4em;
 }
 
