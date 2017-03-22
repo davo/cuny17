@@ -25,7 +25,7 @@
                     <section>
                         <h2>Parte I</h2>
                         <ul>
-                            <li><h4>Introducción</h4></li>
+                            <li><h4>HTML, CSS y JavaScript</h4></li>
                             <li><h4>Creando una página web básica</h4></li>
                             <li><h4>Links e imágenes</h4></li>
                             <li><h4>Hola, CSS</h4></li>
@@ -60,9 +60,9 @@
                      <section>
                         <h3>Introducción</h3>
                         <ul>
-                            <li><p>Repaso acerca de HTML</p></li>
-                            <li><p>Intro a HTML 5</p></li>
-                            <li></li>
+                            <li><p>HTML, CSS y JavaScript</p></li>
+                            <li><p>Desarrollo Web</p></li>
+                            <li><p>Introducción a HTML 5</p></li>
                         </ul>
                     </section>
                     <section>
@@ -86,82 +86,140 @@
                         </ul>
                     </section>
                 </section>
-                <section>
-                    <section style="text-align: left;">
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I  –  Section I – HTML, CSS y JavaScript</span>
+                    <section>
                         <h2>Introducción</h2>
-                        <p>HyperText Markup Language (HTML), Cascading Style Sheets (CSS), y JavaScript son los principales lenguajes que hacen que la web funcione.</p>
-                    </section>
-                    <section style="text-align: left;">
-                        <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
-                    </section>
-                    <section style="text-align: left;">
-                        <p><span>HTML</span> es para agregar significado a tu contenido, dandole marcado (markup).</p>
-                    </section>
-                    <section style="text-align: left;">
-                        <p><span>CSS</span> es para darle formato (estilo) al contenido marcado.</p>
-                    </section>
-                    <section style="text-align: left;">
-                        <p><span>JavaScript</span> es para darle interacción al formato y el contenido marcado.</p>
                     </section>
                     <section>
+                        <p>HyperText Markup Language (HTML), Cascading Style Sheets (CSS), y JavaScript son los principales lenguajes que hacen que la web funcione.</p>
+                    </section>
+                    <section>
+                        <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
+                    </section>
+                    <section>
+                        <p><span>HTML</span> es para agregar significado a tu contenido, dandole marcado (markup).</p>
+                    </section>
+                    <section>
+                        <p><span>CSS</span> es para darle formato (estilo) al contenido marcado.</p>
+                    </section>
+                    <section>
+                        <p><span>JavaScript</span> es para darle interacción al formato y el contenido marcado.</p>
+                    </section>
+                    <section style="text-align: center;">
                         <img src="images/html-css-javascript-905348.png">
                     </section>
-                    <section style="text-align: left;">
+                    <section>
                         <h2>¿Cómo funciona cada uno?</h2>
                     </section>
-                    <section style="text-align: left;">
+                    <section>
                         <h3>HTML</h3>
                         <p>Puedes marcar una ejecución particular de texto como un párrafo con este HTML:</p>
                         <pre><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
                     </section>
-                    <section style="text-align: left;">
+                    <section>
                         <h3>CSS</h3>
                         <p>Luego, puedes especificar el tamaño y color del párrafo con algo de CSS:</p>
                         <pre><code class="css">p {
-      font-size: 20px;
-      color: blue;
-    }</code></pre>
+    font-size: 20px;
+    color: blue;
+}</code></pre>
                     </section>
-                    <section style="text-align: left;" >
-                        <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea con algo de JavaScript</p>
+                    <section>
+                        <h3>JavaScript</h3>
+                        <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea, con algo de JavaScript</p>
                         <pre><code class="javaScript">var p = document.getElementById('parrafo');
 
-        p.addEventListener('click', function(event) {
-          p.innerHTML = 'Hiciste click en este párrafo.';
-        });</code></pre>
+    p.addEventListener('click', function(event) {
+      p.innerHTML = 'Hiciste click en este párrafo.';
+    });</code></pre>
+                    </section>
+                    <section>
+                        
+                    </section>
+                    <section>
+                        <h3>Conclusión</h3>
+                        <p>HTML, CSS y JavaScript son lenguajes totalmente diferentes.</p>
+                        <p>La mayoría de los sitios web dependen de los tres, pero la apariencia de cada sitio está determinada por HTML y CSS.</p>
+
                     </section>
                 </section>
-                <section style="text-align: left;" >
-                    <h3>Simplificación</h3>
-                    <h4>Declaración de tipo de documento en HTML 4.01</h4>
-                    <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
-    "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
-                    <br>
-                    <h4>Declaración de tipo de documento en HTML 5</h4>
-                    <pre><code class="html hljs" data-trim contenteditable>
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I – Sección II - Desarrollo Web</span>
+                   <section>
+                        <h2>Desarrollo Web</h2>
+                        <p class="tag"><a href="">tag: Web Development</a></p>
+                   </section> 
+                   <section>
+                       <p>Lamentablemente, dominar HTML, CSS y JavaScript es sólo un requisito previo para convertirse en un desarrollador web. Hay un montón de otras habilidades prácticas necesarias para ejecutar un sitio web.</p>
+                       <p>Veamos algunas...</p>
+                   </section>
+                    <section>
+                        <ul>
+                            <li><p class="fragment">Optimizar y reutilizar código en módulos</p></li>
+                            <li><p class="fragment">Instalar tu propio servidor web</p></li>
+                            <li><p class="fragment">Migrar un sitio desde tu computadora a un servidor real</p></li>
+                            <li><p class="fragment">Instalar un sistema de versionamiento</p></li>
+                            <li><p class="fragment">Apuntar un dominio a un servidor</p></li>
+                            <li><p class="fragment">Y muchos otros <em>skills</em> más...</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>Vamos a tratar de dar el primer paso, comprendiendo bien estos 3 elementos básicos del desarrollo web.</p>
+                    </section>
 
-                    &lt;!DOCTYPE html&gt;
-
-                    </code></pre>
                 </section>
-
-                <section>
-                    <pre><code class="html hljs">&lt;!DOCTYPE html>
-&lt;html lang="en">
-    &lt;head>
-        &lt;meta charset="UTF-8">
-        &lt;title>&lt;/title>
-    &lt;/head>
-
-    &lt;body>
-    &lt;!-- tu increíble contenido va acá -->
-    &lt;/body>
-&lt;/html></code></pre>
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I – Sección III - Metodología y herramientas</span>
+                    <section>
+                        <h2>Metodología y herramientas</h2>
+                    </section>
+                    <section>
+                        <h3>Modo aprendizaje: <span class="fragment">activado</span></h3>
+                    </section>
+                    <section>
+                        <p class="fragment">La mejor manera de aprender a desarrollar es a través de la construcción de algo que te interese.</p>
+                        <p class="fragment">A medida que desarrolles habilidades, comprenderás lo que es posible y eso te inspirará a crear nuevos proyectos. </p>
+                    </section>
+                    <section>
+                        <p class="fragment">Al aplicar tus habilidades en un proyecto interesante, podrás disfrutar más del proceso de aprendizaje y aprender a un ritmo más rápido.</p>
+                        <p class="fragment">Consejo: comienza a trabajar en un propio proyecto tan pronto como puedas, mientras vas a ir ganando más habilidades, siguiendo éstas sesiones.</p>
+                    </section>
+                    <section>
+                        <h3>Programar contenido desde cero</h3>
+                        <p>Durante las sesiones crearemos 3 plantillas para la publicación de historias interactivas.</p>
+                    </section>
+                    <section>
+                        <p>En cada plantilla aprenderemos fundamentos básicos.</p>
+                    </section>
+                    <section><p>Al final de cada sesión podrán reutilizar el código aprendido y generar nuevas historias interactivas.</p></section>
+                    <section>
+                        <span class="under">Explicar las 3 plantillas</span>
+                    </section>
+                    <section>
+                        <h3>Herramientas</h3>
+                    </section>
+                    <section>
+                        <p>Para estas sesiones, un editor de texto y un navegador web es todo lo que vamos a usar.</p>
+                    </section>
+                    <section>
+                        <span class="under">Foto Sublime Text</span>
+                        <span class="under">Foto Atom</span>
+                    </section>
+                    <section>
+                        <span class="under">Foto Google Chrome</span>
+                        <span class="under">Foto Mozilla Firefox</span>
+                    </section>
+                    <section>
+                        <h3>Guía de trabajo</h3>
+                        <ol>
+                            <li><p>Escribir código en tu editor de texto</p></li>
+                            <li><p>Abrirlo en un navegador web para ver cómo se ve</p></li>
+                            <li><p>???</p></li>
+                            <li><p>Profit</p></li>
+                        </ol>
+                    </section>
                 </section>
-                
-
-                
 
                 <section>
                     <ul>
