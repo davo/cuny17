@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Intro a HTML 5, CSS 3 y JavaScript</title>
+
+        <link rel="stylesheet" href="components/reveal.js/css/reveal.css">
+        
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="components/highlight/src/styles/xcode.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section style="text-align: left;" data-menu-title="Intro">
+                    <h1>Parte 1: Introdución</h1>
+                    <p>CUNY 2017</p>
+                </section>
+
+                
+                <section style="text-align: left;">
+                     <section>
+                        <h3>Introducción</h3>
+                        <ul>
+                            <li><p>Metodología y herramientas</p></li>
+                            <li><p>HTML, CSS y JavaScript</p></li>
+                            <li><p>Desarrollo Web</p></li> 
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Creando una página web básica I</h3>
+                        <ul>
+                            <li><p>Setup</p></li>
+                            <li><p>Estructura de una página web</p></li>
+                            <li><p>Titulos</p></li>
+                            <li><p>Párrafos</p></li>
+                            <li><p>Encabezados</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Creando una página web básica II</h3>
+                        <ul>
+                            <li><p>Listas</p></li>
+                            <li><p>Estilos en línea</p></li>
+                            <li><p>Estructura vs Presentación</p></li>
+                            <li><p>Elementos HTML vacíos</p></li>
+                            <li><p>Introducción a HTML 5</p></li>
+                            <li><p>Resumen</p></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I – Introducción - Metodología y herramientas</span>
+                    <section>
+                        <h2>Metodología y herramientas</h2>
+                    </section>
+                    <section>
+                        <p class="fragment">La mejor manera de <span class="highlight">aprender es</span> a través de <span class="highlight">construir algo</span> que te interese.</p>
+                        <p class="fragment">A medida que desarrolles habilidades, comprenderás lo que es posible y eso te inspirará a crear nuevos proyectos.</p>
+                    </section>
+                    <section>
+                        <p class="fragment">Al aplicar tus <span class="highlight">nuevas habilidades</span> en un proyecto interesante, podrás disfrutar más del proceso de aprendizaje y aprender a un ritmo más rápido.</p>
+                        <p class="fragment">Comienza a trabajar en un proyecto propio tan pronto como puedas, mientras vas a ir ganando más habilidades, siguiendo éstas sesiones.</p>
+                    </section>
+                    <section>
+                        <h2>5 minutos de definición</h2>
+                    </section>
+                    <section>
+                        <h3>Programar contenido desde cero</h3>
+                        <p>Durante las sesiones crearemos 3 plantillas para la publicación de historias interactivas.</p>
+                    </section>
+                    <section>
+                        <p>En cada plantilla aprenderemos fundamentos básicos.</p>
+                    </section>
+                    <section><p>Al final de cada sesión podrán reutilizar el código aprendido y generar nuevas historias interactivas.</p></section>
+                    <section>
+                        <span class="under">Explicar las 3 plantillas</span>
+                    </section>
+                    <section>
+                        <h3>Herramientas</h3>
+                    </section>
+                    <section>
+                        <p>Para estas sesiones, un editor de texto y un navegador web es todo lo que vamos a usar.</p>
+                    </section>
+                    <section>
+                        <h4>Sublime Text 3</h4>
+                        <img src="images/st.gif">
+                    </section>
+                    <section>
+                        <h4>Atom</h4>
+                        <img src="images/atom.gif">
+                    </section>
+                    <section>
+                        <span class="under">Foto Google Chrome</span>
+                        <span class="under">Foto Mozilla Firefox</span>
+                    </section>
+                    <section>
+                        <h3>Guía de trabajo</h3>
+                        <ol>
+                            <li><p>Escribir código en tu editor de texto</p></li>
+                            <li><p>Abrirlo en un navegador web para ver cómo se ve</p></li>
+                            <li><p>Documentar tu código</p></li>
+                            <li><p></p></li>
+                        </ol>
+                    </section>
+                </section>
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I  –  Introducción  –  HTML, CSS y JavaScript</span>
+                    <section>
+                        <h2>Introducción</h2>
+                    </section>
+                    <section>
+                        <p>HyperText Markup Language (HTML), Cascading Style Sheets (CSS), y JavaScript son los principales lenguajes que hacen que la web funcione.</p>
+                    </section>
+                    <section>
+                        <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
+                    </section>
+                    <section>
+                        <p><span>HTML</span> es para agregar significado a tu contenido, dandole marcado (markup).</p>
+                    </section>
+                    <section>
+                        <p><span>CSS</span> es para darle formato (estilo) al contenido marcado.</p>
+                    </section>
+                    <section>
+                        <p><span>JavaScript</span> es para darle interacción al formato y el contenido marcado.</p>
+                    </section>
+                    <section style="text-align: center;">
+                        <img src="images/html-css-javascript-905348.png">
+                    </section>
+                    <section>
+                        <h2>¿Cómo funciona cada uno?</h2>
+                    </section>
+                    <section>
+                        <h3>HTML</h3>
+                        <p>Puedes marcar una ejecución particular de texto como un párrafo con este HTML:</p>
+                        <pre><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
+                    </section>
+                    <section>
+                        <h3>CSS</h3>
+                        <p>Luego, puedes especificar el tamaño y color del párrafo con algo de CSS:</p>
+                        <pre><code class="css">p {
+    font-size: 20px;
+    color: blue;
+}</code></pre>
+                    </section>
+                    <section>
+                        <h3>JavaScript</h3>
+                        <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea, con algo de JavaScript</p>
+                        <pre><code class="javaScript">var p = document.getElementById('parrafo');
+
+    p.addEventListener('click', function(event) {
+      p.innerHTML = 'Hiciste click en este párrafo.';
+    });</code></pre>
+                    </section>
+                    <section>
+                        <h3>Conclusión</h3>
+                        <p>HTML, CSS y JavaScript son lenguajes totalmente diferentes.</p>
+                        <p>La mayoría de los sitios web dependen de los tres, pero la apariencia de cada sitio está determinada por HTML y CSS.</p>
+
+                    </section>
+                </section>
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I – Introducción - Desarrollo Web</span>
+                   <section>
+                        <h2>Desarrollo Web</h2>
+                   </section> 
+                   <section>
+                       <p>Lamentablemente, dominar HTML, CSS y JavaScript es sólo un requisito previo para convertirse en un desarrollador web. Hay un montón de otras habilidades prácticas necesarias para ejecutar un sitio web.</p>
+                       <p>Veamos algunas...</p>
+                   </section>
+                    <section>
+                        <ul>
+                            <li><p class="fragment">Optimizar y reutilizar código en módulos</p></li>
+                            <li><p class="fragment">Instalar tu propio servidor web</p></li>
+                            <li><p class="fragment">Migrar un sitio desde tu computadora a un servidor real</p></li>
+                            <li><p class="fragment">Instalar un sistema de versionamiento</p></li>
+                            <li><p class="fragment">Apuntar un dominio a un servidor</p></li>
+                            <li><p class="fragment">Y muchos otros <em>skills</em> más...</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>Vamos a tratar de dar el primer paso, comprendiendo bien estos 3 elementos básicos del desarrollo web.</p>
+                    </section>
+
+                </section>
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I – Creando una página web básica - Setup</span>
+                    <section>
+                        <h2>Setup / Preparación</h2>
+                    </section>
+                    <section>
+                        <p>Comencemos creando una <strong>nueva carpeta</strong> en nuestra computadora, llamemosla <span class="highlight"><strong>ejercicios</strong></span>.<br>Luego, dentro de la carpeta, crearemos un <strong>nuevo archivo HTML</strong> llamado <span class="highlight"><strong>01.html</strong></span>.</p>
+                    </section>
+
+                    <section>
+                        <p>Este archivo HTML representa una <strong>página web</strong>, y es donde pondremos todo nuestro código.</p>
+                    </section>
+                    <section>
+                        <p>El flujo de trabajo básico hoy será <strong>editar HTML</strong> en el editor de texto y luego <strong>ver los cambios en un navegador web</strong>.</p>
+                    </section>
+                    <section>
+                        <img src="images/web-dev-workflow-1faddb.png">
+                    </section>
+                </section>
+                <section style="text-align: left;">
+                    <span class="sectionTitle">Parte I – Creando una página web básica - Estructura de una página web</span>
+                    <section>
+                        <h2>Estructura de una página web</h2>
+                    </section>
+                    <section>
+                        <p>Agreguemos el siguiente código HTML a nuestro archivo 01.html.</p>
+                    </section>
+                    <section>
+                        <pre><code class="html hljs">&lt;!DOCTYPE html>                                                     
+    &lt;html lang="es">                                                
+        &lt;head>                                                      
+        &lt;title>Título de mi página&lt;/title>                          
+        &lt;/head>                                                     
+        &lt;body>                                                  
+            &lt;h1>Armas de distracción masiva&lt;/h1>
+            &lt;h2>La agnotología es el estudio de la fabricación premeditada de desconocimiento&lt;/h2>
+            &lt;p>Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p>
+        &lt;/body>
+    &lt;/html></code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="html hljs">&lt;!-- Declaración de tipo de documento -->
+&lt;!DOCTYPE html>                                                     
+    &lt;!-- Etiqueta raíz con declaración de lenguaje -->
+    &lt;html lang="es">                                                
+        &lt;!-- Metadata de la página -->
+        &lt;head>                                                      
+        &lt;!-- Titulo de la página -->
+        &lt;title>Armas de distracción masiva&lt;/title>                          
+        &lt;!-- Cierre de la etiqueta HEAD -->
+        &lt;/head>                                                     
+        &lt;!-- Etiqueta de texto encabezado principal -->
+        &lt;body>
+            &lt;!-- Etiqueta de texto encabezado principal -->                                                    
+            &lt;h1>Armas de distracción masiva&lt;/h1>
+            &lt;!-- Etiqueta de texto encabezado secundario -->               
+            &lt;h2>La agnotología es el estudio de la fabricación premeditada de desconocimiento&lt;/h2>
+            &lt;!-- Etiqueta de texto de párrafo -->               
+            &lt;p>Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p>
+        &lt;!-- Cierre de la etiqueta BODY -->                                 
+        &lt;/body>
+    &lt;!-- Cierre de la etiqueta principal HTML -->   
+    &lt;/html></code></pre>
+                    </section>
+                    <section>
+                        <img src="images/estructura-documento-html.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Veamos que és cada parte</h2>
+                    </section>
+                    <section>
+                        <p>Primero, necesitamos decir a los navegadores que se trata de una página web HTML5 con la línea :</p>
+                        <pre><code class="html hljs">&lt;!DOCTYPE html></code></pre>
+                        <p>Esta es sólo una cadena especial que los navegadores buscan cuando intentan mostrar nuestra página web.
+                    </p></section>
+                    <section style="text-align: left;" >
+                        <p>Declaración de tipo de documento en HTML 4.01</p>
+                        <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
+        "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
+                        <br>
+                        <p>Declaración de tipo de documento en HTML 5</p>
+                        <pre><code class="html hljs" data-trim contenteditable>
+
+                        &lt;!DOCTYPE html&gt;
+
+                        </code></pre>
+                    </section>
+                    <section>
+                        <img src="images/html-tags-elements-72813b.png" alt="">
+                    </section>
+                    <section>
+                        <p>Un documento HTML está compuesto por <span class="highlight">etiquetas</span> (tags), que le dan marcado a nuestro contenido.</p>
+                        <p>Cada etiqueta está compuesta por <span class="highlight">elementos</span> y <span class="highlight">atributos</span>.</p>
+                    </section>
+                    <section>
+                        <h3>Elementos principales</h3>
+                        <p>Etiqueta principal o raíz</p>
+                        <ul class="html">
+                            <li class="root">&lt;html&gt;</li>
+                        </ul>
+                        <p>Etiquetas de metadata</p>
+                        <ul class="html">
+                            <li class="metadata">&lt;head&gt;</li>
+                            <li class="metadata">&lt;link&gt;</li>
+                            <li class="metadata">&lt;meta&gt;</li>
+                            <li class="metadata">&lt;style&gt;</li>
+                            <li class="metadata">&lt;title&gt;</li>
+                        </ul>
+                        <p>Etiquetas de contenido</p>
+                        <ul class="html">
+                            <li class="content">&lt;header&gt;</li>
+                            <li class="content">&lt;footer&gt;</li>
+                            <li class="content">&lt;section&gt;</li>
+                            <li class="content">&lt;nav&gt;</li>
+                            <li class="content">&lt;article&gt;</li>
+                            <li class="content">&lt;aside&gt;</li>
+                        </ul>
+                        </section>
+                        <section>
+                        <h3>Elementos para contenido</h3>
+                        <p>Etiquetas de contenido de texto</p>
+                        <ul class="html">
+                            <li class="text-content">&lt;div&gt;</li>
+                            <li class="text-content">&lt;p&gt;</li>
+                            <li class="text-content">&lt;pre&gt;</li>
+                            <li class="text-content">&lt;figcaption&gt;</li>
+                            <li class="text-content">&lt;figure&gt;</li>
+                            <li class="text-content">&lt;hr&gt;</li>
+                            <li class="text-content">&lt;ol&gt;</li>
+                            <li class="text-content">&lt;ul&gt;</li>
+                            <li class="text-content">&lt;li&gt;</li>
+                        </ul>
+                        <p>Etiquetas de contenido "Inline"</p>
+                        <ul class="html">
+                            <li class="inline-text">&lt;a&gt;</li>
+                            <li class="inline-text">&lt;abbr&gt;</li>
+                            <li class="inline-text">&lt;code&gt;</li>
+                            <li class="inline-text">&lt;em&gt;</li>
+                            <li class="inline-text">&lt;i&gt;</li>
+                            <li class="inline-text">&lt;span&gt;</li>
+                            <li class="inline-text">&lt;strong&gt;</li>
+                        </ul>
+                        <p>Etiquetas de contenido multimedia</p>
+                        <ul class="html">
+                            <li class="image-multimedia">&lt;audio&gt;</li>
+                            <li class="image-multimedia">&lt;img&gt;</li>
+                            <li class="image-multimedia">&lt;video&gt;</li>
+                        </ul>
+                        </section>
+                        <section>
+                        <h3>Elementos para contenidos especiales</h3>
+                        <p>Etiquetas para tablas</p>
+                        <ul class="html">
+                            <li class="table">&lt;table&gt;</li>
+                            <li class="table">&lt;tbody&gt;</li>
+                            <li class="table">&lt;tr&gt;</li>
+                            <li class="table">&lt;td&gt;</li>
+                        </ul>
+                        <p>Etiquetas para formularios</p>
+                        <ul class="html">
+                            <li class="form">&lt;form&gt;</li>
+                            <li class="form">&lt;input&gt;</li>
+                            <li class="form">&lt;textarea&gt;</li>
+                            <li class="form">&lt;button&gt;</li>
+                            <li class="form">&lt;label&gt;</li>
+                            <li class="form">&lt;select&gt;</li>
+                            <li class="form">&lt;option&gt;</li>
+                        </ul>
+                        <p>Etiquetas de programación</p>
+                        <ul class="html">
+                            <li class="scripting">&lt;script&gt;</li>
+                            <li class="scripting">&lt;canvas&gt;</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Atributos</h3>
+                        <p>Estos atributos sirven para darle instrucciones especiales a los elementos.</p>
+                        <ul class="html">
+                            <li class="inline-text attribute">id</li>
+                            <li class="inline-text attribute">href</li>
+                            <li class="inline-text attribute">style</li>
+                            <li class="inline-text attribute">class</li>
+                            <li class="inline-text attribute">data-*</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Etiquetas</h3>
+                        <p>Finalmente vemos como se compone una etiqueta.</p>
+                        <ul class="tags">
+                            <li class="metadata">&lt;link <span class="attribute fragment">rel=&quot;stylesheet&quot;</span> <span class="attribute fragment">type=&quot;text/css&quot;</span> <span class="attribute fragment">href=&quot;theme.css&quot;</span>&gt;</li>
+                            <li class="inline-text">&lt;a <span class="attribute fragment">href=&quot;https://www.propublica.org/&quot;</span> <span class="attribute fragment">target=&quot;_blank&quot;</span>&gt;ProPublica&lt;/a&gt;</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Título en HTML</h2>
+                        <dl>
+                            <dt>Etiqueta tipo</dt>
+                            <dd>metadata</dd>
+                        </dl>
+                        <dl>
+                            <dt>Función</dt>
+                            <dd>Declara el titulo del documento</dd>
+                        </dl>
+                        <dl>
+                            <dt>Buena práctica</dt>
+                            <dd>[Nombre de la sección - Nombre del sitio]</dd>
+                        </dl>
+                        
+                        <div class="clearfix"></div>
+                        <p>Ejemplo:</p>
+
+                        <ul class="html">
+                            <li class="metadata">&lt;title&gt;</li><li class="plan-content">Armas de distracción masiva</li><li class="metadata">&lt;/title&gt;</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img src="images/html-title.png" alt="" class="split right">
+                    </section>
+                </section>
+                <section>
+                    
+                    <h3>Material de referencia</h3>
+                    <ul>
+                        <li>https://css-tricks.com/snippets/css/</li>
+                        <li>http://caniuse.com/</li>
+                        <li>https://www.smashingmagazine.com/learning-css3-useful-reference-guide/</li>
+                    </ul>
+                    
+                </section>
+
+            </div>
+        </div>
+
+        <script src="components/reveal.js/lib/js/head.min.js"></script>
+        <script src="components/reveal.js/js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                controls: false,
+                center: true,
+                width: "100%",
+                height: "100%",
+                margin: 0,
+                minScale: 1,
+                maxScale: 1,
+
+                menu: {
+                    themes: false
+                },
+
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'components/reveal.js-menu/menu.js' },
+                    { src: 'components/reveal.js/plugin/markdown/marked.js' },
+                    { src: 'components/reveal.js/plugin/notes/notes.js', async: true },
+                    { src: 'components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
