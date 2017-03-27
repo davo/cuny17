@@ -47,11 +47,38 @@
                         <h3>Creando una página web básica II</h3>
                         <ul>
                             <li><p>Listas</p></li>
-                            <li><p>Estilos en línea</p></li>
+                            <li><p>CSS I: Estilos en línea</p></li>
                             <li><p>Estructura vs Presentación</p></li>
-                            <li><p>Elementos HTML vacíos</p></li>
                             <li><p>Introducción a HTML 5</p></li>
                             <li><p>Resumen</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Enlances e imágenes</h3>
+                        <ul>
+                            <li><p>Setup</p></li>
+                            <li><p>Links</p></li>
+                            <li><p>Imágenes</p></li>
+                            <li><p>Buenas prácticas con links e imágenes</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Hola, CSS</h3>
+                        <ul>
+                            <li><p>Setup</p></li>
+                            <li><p>Hojas de estilo CSS</p></li>
+                            <li><p>Propiedades básicas</p></li>
+                            <li><p>Media Queries</p></li>
+                            <li><p>Selectores</p></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Selectores CSS</h3>
+                        <ul>
+                            <li><p>Atributo de clases (class)</p></li>
+                            <li><p>Atributo de identidad (id)</p></li>
+                            <li><p>Especificidades de los selectores</p></li>
+                            <li><p>Colores hexagesimales, RGB y colores RGBa</p></li>
                         </ul>
                     </section>
                 </section>
@@ -67,7 +94,7 @@
                     </section>
                     <section>
                         <p class="fragment">Al aplicar tus <span class="highlight">nuevas habilidades</span> en un proyecto interesante, podrás disfrutar más del proceso de aprendizaje y aprender a un ritmo más rápido.</p>
-                        <p class="fragment">Comienza a trabajar en un proyecto propio tan pronto como puedas, mientras vas a ir ganando más habilidades, siguiendo éstas sesiones.</p>
+                        <p class="fragment">Comienza a trabajar en un <span class="highlight">proyecto propio</span> tan pronto como puedas, mientras vas a ir ganando más habilidades, siguiendo éstas sesiones.</p>
                     </section>
                     <section>
                         <h2>5 minutos de definición</h2>
@@ -566,7 +593,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                      <section data-transition="fade-in fade-out">
                         <img src="images/estructura-documento-html-block@2x.png" alt="">
                     </section>
-                     <section data-transition="fade-in fade-out">
+                    <section data-transition="fade-in fade-out">
                         <img src="images/estructura-documento-html-block-style@2x.png" alt="">
                     </section>
                     <section>
@@ -577,10 +604,145 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                 <section style="text-align: left;">
                      <section>
                         <h2>Listas</h2>
+                        <p>HTML contiene 3 tipos de elementos para generar listas.</p>
+                        <div style="float: left;">
+                            <h5>Listas ordinales (ordered list)</h5>
+                            <ul class="html">
+                                <li class="text-content">&lt;ol&gt;</li>
+                            </ul>
+                        </div>
+                        <div style="float: left;">
+                        <h5>Listas no ordinales (unordered list)</h5>
+                        <ul class="html">
+                            <li class="text-content">&lt;ul&gt;</li>
+                        </ul>
+                        </div>
+                        <div style="float: left;">
+                        <h5>Listas de descripción (description list)</h5>
+                        <ul class="html">
+                            <li class="text-content">&lt;dl&gt;</li>
+                        </ul>
+                        </div>
+                        <div class="clearfix"></div>
                     </section>
                     <section>
-                        <p></p>
+                        <h2>Listas ordinales (ordered list)</h2>
+                        <ul class="html">
+                            <li class="text-content">&lt;ol&gt;</li><li class="text-content">&lt;/ol&gt;</li>
+                        </ul>
+                        
+                        <div class="clearfix"></div>
+                        <dl>
+                            <dt>Etiqueta tipo</dt>
+                            <dd>Contenido de Texto</dd>
+                        </dl>
+                        <dl>
+                            <dt>Función</dt>
+                            <dd>Declara una lista ordenada</dd>
+                        </dl>
+                        
+                        <div class="clearfix"></div>
+                        <p>Ejemplo:</p>
+                        <pre><code class="html hljs">&lt;ol type=&quot;A&quot;&gt;
+  &lt;li&gt;Ciudad de México&lt;/li&gt;
+  &lt;li&gt;São Paulo&lt;/li&gt;
+  &lt;li&gt;Buenos Aires&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        
                     </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-ol@2x.png" alt="">
+                    </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-ol-options.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Listas no ordinales (unordered list)</h2>
+                            <ul class="html">
+                                <li class="text-content">&lt;ol&gt;</li><li class="text-content">&lt;/ol&gt;</li>
+                            </ul>
+                            
+                            <div class="clearfix"></div>
+                            <dl>
+                                <dt>Etiqueta tipo</dt>
+                                <dd>Contenido de Texto</dd>
+                            </dl>
+                            <dl>
+                                <dt>Función</dt>
+                                <dd>Declara una lista no ordenada</dd>
+                            </dl>
+                            
+                            <div class="clearfix"></div>
+                            <p>Ejemplo:</p>
+                            <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
+  &lt;li&gt;Theresa May&lt;/li&gt;
+  &lt;li&gt;David Cameron&lt;/li&gt;
+  &lt;li&gt;Gordon Brown&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-ul-options@2x.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Listas de descripción (description list)</h2>
+                            <ul class="html">
+                                <li class="text-content">&lt;dl&gt;</li><li class="text-content">&lt;/dl&gt;</li>
+                            </ul>
+                            
+                            <div class="clearfix"></div>
+                            <dl>
+                                <dt>Etiqueta tipo</dt>
+                                <dd>Contenido de Texto</dd>
+                            </dl>
+                            <dl>
+                                <dt>Función</dt>
+                                <dd>Declara una lista de términos, con una descripción para cada término.</dd>
+                            </dl>
+                            
+                            <div class="clearfix"></div>
+                            <p>Ejemplo:</p>
+                            <pre><code class="html hljs">&lt;dl&gt;
+  &lt;dt&gt;Nombre:&lt;/dt&gt;
+  &lt;dd&gt;John Connor&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-dl@2x.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Listas anidadas</h2>
+                        <p>En HTML es posible anidar contenido en listas de este modo.</p>
+                        <pre><code class="html hljs">&lt;ol&gt;
+  &lt;li&gt;Aprender HTML&lt;/li&gt;
+  &lt;li&gt;Aprender CSS&lt;/li&gt;
+  &lt;li&gt;
+    Escribir una p&aacute;gina web:
+    &lt;ul&gt;
+      &lt;li&gt;Declarar titulo&lt;/li&gt;
+      &lt;li&gt;Crear un encabezado de p&aacute;gina&lt;/li&gt;
+      &lt;li&gt;Crear un contenido&lt;/li&gt;
+      &lt;li&gt;Crear un pie de p&aacute;gina&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Aprender JavaScript&lt;/li&gt;
+  &lt;li&gt;Publicar mi p&aacute;gina&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-listas-anidadas@2x.png" alt="">
+                    </section>
+                </section>
+                <section style="text-align: left;">
+                    <h1>Intro a CSS</h1>
+                </section>
+                <section>
+                    <h1>Enlances e imágenes</h1>
+                    <ul>
+                        <li><p>Setup</p></li>
+                        <li><p>Links</p></li>
+                        <li><p>Imágenes</p></li>
+                        <li><p>Buenas prácticas con links e imágenes</p></li>
+                    </ul>
                 </section>
                 <section>
                     
