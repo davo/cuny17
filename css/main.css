@@ -216,6 +216,7 @@ body {
  /* background-color: white;*/
   font-weight: 500;
   font-size: 0.4em;
+  z-index: 100;
 }
 
 .reveal .tag {
@@ -292,8 +293,10 @@ body {
 .reveal dl {
   padding: 12px 0 24px 96px;
   margin: 0px;
-  font-size: 0.6em;
+  font-size: 0.55em;
   font-weight: 300;
+  width: 320px;
+  vertical-align: top;
 }
 
 .reveal dt {
@@ -301,7 +304,9 @@ body {
 }
 
 .reveal dd {
-  margin-left: 0px !important; 
+  margin-left: 0px !important;
+  margin-top: 12px;
+  font-size: 0.9em;
 }
 
 .reveal ol {

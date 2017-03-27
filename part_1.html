@@ -39,8 +39,8 @@
                             <li><p>Setup</p></li>
                             <li><p>Estructura de una página web</p></li>
                             <li><p>Titulos</p></li>
-                            <li><p>Párrafos</p></li>
                             <li><p>Encabezados</p></li>
+                            <li><p>Párrafos</p></li>
                         </ul>
                     </section>
                     <section>
@@ -307,6 +307,7 @@
                             <li class="content">&lt;nav&gt;</li>
                             <li class="content">&lt;article&gt;</li>
                             <li class="content">&lt;aside&gt;</li>
+                            <li class="content">&lt;h1–h6&gt;</li>
                         </ul>
                         </section>
                         <section>
@@ -379,13 +380,18 @@
                     <section>
                         <h3>Etiquetas</h3>
                         <p>Finalmente vemos como se compone una etiqueta.</p>
-                        <ul class="tags">
+                        <ul class="html tags">
                             <li class="metadata">&lt;link <span class="attribute fragment">rel=&quot;stylesheet&quot;</span> <span class="attribute fragment">type=&quot;text/css&quot;</span> <span class="attribute fragment">href=&quot;theme.css&quot;</span>&gt;</li>
                             <li class="inline-text">&lt;a <span class="attribute fragment">href=&quot;https://www.propublica.org/&quot;</span> <span class="attribute fragment">target=&quot;_blank&quot;</span>&gt;ProPublica&lt;/a&gt;</li>
                         </ul>
                     </section>
                     <section>
                         <h2>Título en HTML</h2>
+                        <ul class="html">
+                            <li class="metadata">&lt;title&gt;</li><li class="metadata">&lt;/title&gt;</li>
+                        </ul>
+                        
+                        <div class="clearfix"></div>
                         <dl>
                             <dt>Etiqueta tipo</dt>
                             <dd>metadata</dd>
@@ -401,13 +407,179 @@
                         
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
-
-                        <ul class="html">
-                            <li class="metadata">&lt;title&gt;</li><li class="plan-content">Armas de distracción masiva</li><li class="metadata">&lt;/title&gt;</li>
-                        </ul>
+                        <pre><code class="html hljs">&lt;title&gt;Armas de distracción masiva&lt;/title&gt;</code></pre>
+                        
                     </section>
                     <section>
                         <img src="images/html-title.png" alt="" class="split right">
+                    </section>
+                    <section>
+                        <h2>Encabezados en HTML</h2>
+                        <ul class="html"><li class="content">&lt;h1&gt;</li><li class="content">&lt;/h1&gt;</li><li class="content">&lt;...&gt;</li><li class="content">&lt;h6&gt;</li><li class="content">&lt;/h6&gt;</li></ul>
+                        
+                        <div class="clearfix"></div>
+                        <dl>
+                            <dt>Etiqueta tipo</dt>
+                            <dd>Contenido, sección</dd>
+                        </dl>
+                        <dl>
+                            <dt>Función</dt>
+                            <dd>Declara el texto de encabezado de una sección del documento.</dd>
+                        </dl>
+                        <dl>
+                            <dt>Buena práctica</dt>
+                            <dd>La información de encabezamiento puede ser utilizada por robots para indexar un documento.</dd>
+                        </dl>
+                        <div class="clearfix"></div>
+                        <p>Ejemplo:</p>
+                        <pre><code class="html hljs">&lt;h1&gt;Encabezado Nivel 1&lt;/h1&gt;
+&lt;h2&gt;Encabezado Nivel 2&lt;/h2&gt;
+&lt;h3&gt;Encabezado Nivel 3&lt;/h3&gt;
+&lt;h4&gt;Encabezado Nivel 4&lt;/h4&gt;
+&lt;h5&gt;Encabezado Nivel 5&lt;/h5&gt;
+&lt;h6&gt;Encabezado Nivel 6&lt;/h6&gt;</code></pre>
+                        
+                    </section>
+                    <section>
+                        <img src="images/estructura-documento-html-encabezados.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Párrafos en HTML</h2>
+                        <ul class="html"><li class="content">&lt;p&gt;</li><li class="content">&lt;/p&gt;</li></ul>
+                        
+                        <div class="clearfix"></div>
+                        <dl>
+                            <dt>Etiqueta tipo</dt>
+                            <dd>Contenido</dd>
+                        </dl>
+                        <dl>
+                            <dt>Función</dt>
+                            <dd>Representa un párrafo de texto.</dd>
+                        </dl>
+                        
+                        
+                        <div class="clearfix"></div>
+                        <p>Ejemplo:</p>
+                        <pre><code class="html hljs">&lt;p&gt;Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p&gt;</code></pre>
+                        
+                    </section>
+                    <section>
+                        <h2>Links en HTML</h2>
+                        <ul class="html"><li class="content">&lt;a href="/link" target=""&gt;</li><li class="content">&lt;/a&gt;</li></ul>
+                        
+                        <div class="clearfix"></div>
+                        <dl>
+                            <dt>Etiqueta tipo</dt>
+                            <dd>Contenido</dd>
+                        </dl>
+                        <dl>
+                            <dt>Función</dt>
+                            <dd>Crea un hipervínculo a otras páginas web, archivos, ubicaciones dentro de la misma página, direcciones de correo electrónico o cualquier otra URL.</dd>
+                        </dl>
+                        <dl>
+                            <dt>Buenas prácticas</dt>
+                            <dd>El texto del enlace debe hacer referencia al recurso enlazado.</dd>
+                        </dl>
+                        
+                        <div class="clearfix"></div>
+                        <p>Ejemplo:</p>
+                        <pre><code class="html hljs">&lt;p&gt;políticos y periodistas se preguntan cómo hacer frente a eventuales
+&lt;a href="http://internacional.elpais.com/internacional/..."&gt;campañas de uso continuado de datos falsos&lt;/a&gt;,
+que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></pre>
+                    </section>
+                    <section>
+                        <h2>Ahora veamos todo esto junto</h2>
+                    </section>
+
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html@2x.png" alt="">
+                    </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-links@2x.png" alt="">
+                    </section>
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-figcaption@2x.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Hola, HTML 5...</h2>
+                        <p class="fragment">HTML 5 incorpora etiquetas semánticas para fomentar una mejor tarea a la hora de darle formato al contenido.</p>
+                    </section>
+                    <section>
+                        <h2>Etiquetas semánticas</h2>
+                        <p class="fragment">En el último ejemplo vimos dos nuevas etiquetas: <ul class="html"><li class="fragment text-content">&lt;figure&gt;</li><li class="fragment text-content">&lt;figcaption&gt;</li></ul></p>
+                        <p class="fragment">Hay muchas más que aprenderemos y adoptaremos en este curso.</p>
+                    </section>                    
+                </section>
+
+                <section style="text-align: left;">
+                     <section>
+                        <h2>Elementos de bloque y elementos dentro de línea</h2>
+                        <p>Todos los elementos HTML tienen un valor por default para visualizarse, dependiendo en el tipo de contenido que sea.</p>
+                     </section>
+                     <section>
+                         <h2>Elementos de bloque (block)</h2>
+                         <p>Un elemento de nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha hasta donde puede).</p>
+                     </section>
+                     <section>
+                        <h3>Block Elements</h3>
+                        <ul class="html">
+                            <li class="content">&lt;header&gt;</li>
+                            <li class="content">&lt;footer&gt;</li>
+                            <li class="content">&lt;section&gt;</li>
+                            <li class="content">&lt;nav&gt;</li>
+                            <li class="content">&lt;article&gt;</li>
+                            <li class="content">&lt;aside&gt;</li>
+                            <li class="content">&lt;h1–h6&gt;</li>
+                            <li class="text-content">&lt;div&gt;</li>
+                            <li class="text-content">&lt;p&gt;</li>
+                            <li class="text-content">&lt;pre&gt;</li>
+                            <li class="text-content">&lt;figcaption&gt;</li>
+                            <li class="text-content">&lt;figure&gt;</li>
+                            <li class="text-content">&lt;hr&gt;</li>
+                            <li class="text-content">&lt;ol&gt;</li>
+                            <li class="text-content">&lt;ul&gt;</li>
+                            <li class="text-content">&lt;li&gt;</li>
+
+                            <li class="table">&lt;table&gt;</li>
+                            <li class="table">&lt;tbody&gt;</li>
+                            <li class="table">&lt;tr&gt;</li>
+                            <li class="table">&lt;td&gt;</li>
+                            <li class="form">&lt;form&gt;</li>
+                        </ul>
+                     </section>
+                     <section>
+                         <h2>Elementos dentro de línea (inline)</h2>
+                         <p>Un elemento en línea no se inicia en una nueva línea y sólo ocupa tanto ancho como sea necesario.</p>
+                     </section>
+                     <section>
+                        <h3>Inline Elements</h3>
+                        <ul class="html">
+                            <li class="inline-text">&lt;a&gt;</li>
+                            <li class="inline-text">&lt;abbr&gt;</li>
+                            <li class="inline-text">&lt;code&gt;</li>
+                            <li class="inline-text">&lt;em&gt;</li>
+                            <li class="inline-text">&lt;i&gt;</li>
+                            <li class="inline-text">&lt;span&gt;</li>
+                            <li class="inline-text">&lt;strong&gt;</li>
+                        </ul>
+                     </section>
+                     <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-block@2x.png" alt="">
+                    </section>
+                     <section data-transition="fade-in fade-out">
+                        <img src="images/estructura-documento-html-block-style@2x.png" alt="">
+                    </section>
+                    <section>
+                        <h2>Usando CSS podemos imponer un comportamiento distinto a los elementos HTML.</h2>
+                        <p>A continuación veremos en profundidad cómo hacer esto.</p>
+                    </section>
+                </section>
+                <section style="text-align: left;">
+                     <section>
+                        <h2>Listas</h2>
+                    </section>
+                    <section>
+                        <p></p>
                     </section>
                 </section>
                 <section>
