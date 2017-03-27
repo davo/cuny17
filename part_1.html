@@ -7,7 +7,7 @@
         <title>Intro a HTML 5, CSS 3 y JavaScript</title>
 
         <link rel="stylesheet" href="components/reveal.js/css/reveal.css">
-        
+
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="components/highlight/src/styles/xcode.css">
@@ -23,14 +23,14 @@
                     <p>CUNY 2017</p>
                 </section>
 
-                
+
                 <section style="text-align: left;">
                      <section>
                         <h3>Introducción</h3>
                         <ul>
                             <li><p>Metodología y herramientas</p></li>
                             <li><p>HTML, CSS y JavaScript</p></li>
-                            <li><p>Desarrollo Web</p></li> 
+                            <li><p>Desarrollo Web</p></li>
                         </ul>
                     </section>
                     <section>
@@ -47,9 +47,8 @@
                         <h3>Creando una página web básica II</h3>
                         <ul>
                             <li><p>Listas</p></li>
-                            <li><p>CSS I: Estilos en línea</p></li>
-                            <li><p>Estructura vs Presentación</p></li>
-                            <li><p>Introducción a HTML 5</p></li>
+                            <li><p>Estilos en línea</p></li>
+                            <li><p>Introducción a elementos de HTML 5</p></li>
                             <li><p>Resumen</p></li>
                         </ul>
                     </section>
@@ -63,7 +62,7 @@
                         </ul>
                     </section>
                     <section>
-                        <h3>Hola, CSS</h3>
+                        <h3>CSS</h3>
                         <ul>
                             <li><p>Setup</p></li>
                             <li><p>Hojas de estilo CSS</p></li>
@@ -129,13 +128,13 @@
                         <span class="under">Foto Mozilla Firefox</span>
                     </section>
                     <section>
-                        <h3>Guía de trabajo</h3>
-                        <ol>
+                        <h2>Guía de trabajo</h2>
+                        <ul>
                             <li><p>Escribir código en tu editor de texto</p></li>
                             <li><p>Abrirlo en un navegador web para ver cómo se ve</p></li>
                             <li><p>Documentar tu código</p></li>
-                            <li><p></p></li>
-                        </ol>
+                            <li><p>Compartí lo que aprendiste</p></li>
+                        </ul>
                     </section>
                 </section>
                 <section style="text-align: left;">
@@ -144,7 +143,7 @@
                         <h2>Introducción</h2>
                     </section>
                     <section>
-                        <p>HyperText Markup Language (HTML), Cascading Style Sheets (CSS), y JavaScript son los principales lenguajes que hacen que la web funcione.</p>
+                        <p>HyperText Markup Language <span class="highlight">HTML</span>, Cascading Style Sheets <span class="highlight">CSS</span>, y JavaScript <span class="highlight">JS</span> son los principales lenguajes que hacen que la web funcione.</p>
                     </section>
                     <section>
                         <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
@@ -197,7 +196,7 @@
                     <span class="sectionTitle">Parte I – Introducción - Desarrollo Web</span>
                    <section>
                         <h2>Desarrollo Web</h2>
-                   </section> 
+                   </section>
                    <section>
                        <p>Lamentablemente, dominar HTML, CSS y JavaScript es sólo un requisito previo para convertirse en un desarrollador web. Hay un montón de otras habilidades prácticas necesarias para ejecutar un sitio web.</p>
                        <p>Veamos algunas...</p>
@@ -245,12 +244,12 @@
                         <p>Agreguemos el siguiente código HTML a nuestro archivo 01.html.</p>
                     </section>
                     <section>
-                        <pre><code class="html hljs">&lt;!DOCTYPE html>                                                     
-    &lt;html lang="es">                                                
-        &lt;head>                                                      
-        &lt;title>Título de mi página&lt;/title>                          
-        &lt;/head>                                                     
-        &lt;body>                                                  
+                        <pre><code class="html hljs">&lt;!DOCTYPE html>
+    &lt;html lang="es">
+        &lt;head>
+        &lt;title>Título de mi página&lt;/title>
+        &lt;/head>
+        &lt;body>
             &lt;h1>Armas de distracción masiva&lt;/h1>
             &lt;h2>La agnotología es el estudio de la fabricación premeditada de desconocimiento&lt;/h2>
             &lt;p>Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p>
@@ -259,26 +258,26 @@
                     </section>
                     <section>
                         <pre><code class="html hljs">&lt;!-- Declaración de tipo de documento -->
-&lt;!DOCTYPE html>                                                     
+&lt;!DOCTYPE html>
     &lt;!-- Etiqueta raíz con declaración de lenguaje -->
-    &lt;html lang="es">                                                
+    &lt;html lang="es">
         &lt;!-- Metadata de la página -->
-        &lt;head>                                                      
+        &lt;head>
         &lt;!-- Titulo de la página -->
-        &lt;title>Armas de distracción masiva&lt;/title>                          
+        &lt;title>Armas de distracción masiva&lt;/title>
         &lt;!-- Cierre de la etiqueta HEAD -->
-        &lt;/head>                                                     
+        &lt;/head>
         &lt;!-- Etiqueta de texto encabezado principal -->
         &lt;body>
-            &lt;!-- Etiqueta de texto encabezado principal -->                                                    
+            &lt;!-- Etiqueta de texto encabezado principal -->
             &lt;h1>Armas de distracción masiva&lt;/h1>
-            &lt;!-- Etiqueta de texto encabezado secundario -->               
+            &lt;!-- Etiqueta de texto encabezado secundario -->
             &lt;h2>La agnotología es el estudio de la fabricación premeditada de desconocimiento&lt;/h2>
-            &lt;!-- Etiqueta de texto de párrafo -->               
+            &lt;!-- Etiqueta de texto de párrafo -->
             &lt;p>Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p>
-        &lt;!-- Cierre de la etiqueta BODY -->                                 
+        &lt;!-- Cierre de la etiqueta BODY -->
         &lt;/body>
-    &lt;!-- Cierre de la etiqueta principal HTML -->   
+    &lt;!-- Cierre de la etiqueta principal HTML -->
     &lt;/html></code></pre>
                     </section>
                     <section>
@@ -294,8 +293,8 @@
                     </p></section>
                     <section style="text-align: left;" >
                         <p>Declaración de tipo de documento en HTML 4.01</p>
-                        <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC 
-        "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                        <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC
+        "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
                         <br>
                         <p>Declaración de tipo de documento en HTML 5</p>
@@ -344,8 +343,8 @@
                             <li class="text-content">&lt;div&gt;</li>
                             <li class="text-content">&lt;p&gt;</li>
                             <li class="text-content">&lt;pre&gt;</li>
-                            <li class="text-content">&lt;figcaption&gt;</li>
                             <li class="text-content">&lt;figure&gt;</li>
+                            <li class="text-content">&lt;figcaption&gt;</li>
                             <li class="text-content">&lt;hr&gt;</li>
                             <li class="text-content">&lt;ol&gt;</li>
                             <li class="text-content">&lt;ul&gt;</li>
@@ -417,7 +416,7 @@
                         <ul class="html">
                             <li class="metadata">&lt;title&gt;</li><li class="metadata">&lt;/title&gt;</li>
                         </ul>
-                        
+
                         <div class="clearfix"></div>
                         <dl>
                             <dt>Etiqueta tipo</dt>
@@ -431,11 +430,11 @@
                             <dt>Buena práctica</dt>
                             <dd>[Nombre de la sección - Nombre del sitio]</dd>
                         </dl>
-                        
+
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
                         <pre><code class="html hljs">&lt;title&gt;Armas de distracción masiva&lt;/title&gt;</code></pre>
-                        
+
                     </section>
                     <section>
                         <img src="images/html-title.png" alt="" class="split right">
@@ -443,7 +442,7 @@
                     <section>
                         <h2>Encabezados en HTML</h2>
                         <ul class="html"><li class="content">&lt;h1&gt;</li><li class="content">&lt;/h1&gt;</li><li class="content">&lt;...&gt;</li><li class="content">&lt;h6&gt;</li><li class="content">&lt;/h6&gt;</li></ul>
-                        
+
                         <div class="clearfix"></div>
                         <dl>
                             <dt>Etiqueta tipo</dt>
@@ -465,7 +464,7 @@
 &lt;h4&gt;Encabezado Nivel 4&lt;/h4&gt;
 &lt;h5&gt;Encabezado Nivel 5&lt;/h5&gt;
 &lt;h6&gt;Encabezado Nivel 6&lt;/h6&gt;</code></pre>
-                        
+
                     </section>
                     <section>
                         <img src="images/estructura-documento-html-encabezados.png" alt="">
@@ -473,7 +472,7 @@
                     <section>
                         <h2>Párrafos en HTML</h2>
                         <ul class="html"><li class="content">&lt;p&gt;</li><li class="content">&lt;/p&gt;</li></ul>
-                        
+
                         <div class="clearfix"></div>
                         <dl>
                             <dt>Etiqueta tipo</dt>
@@ -483,17 +482,17 @@
                             <dt>Función</dt>
                             <dd>Representa un párrafo de texto.</dd>
                         </dl>
-                        
-                        
+
+
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
                         <pre><code class="html hljs">&lt;p&gt;Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p&gt;</code></pre>
-                        
+
                     </section>
                     <section>
                         <h2>Links en HTML</h2>
                         <ul class="html"><li class="content">&lt;a href="/link" target=""&gt;</li><li class="content">&lt;/a&gt;</li></ul>
-                        
+
                         <div class="clearfix"></div>
                         <dl>
                             <dt>Etiqueta tipo</dt>
@@ -507,7 +506,7 @@
                             <dt>Buenas prácticas</dt>
                             <dd>El texto del enlace debe hacer referencia al recurso enlazado.</dd>
                         </dl>
-                        
+
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
                         <pre><code class="html hljs">&lt;p&gt;políticos y periodistas se preguntan cómo hacer frente a eventuales
@@ -535,7 +534,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                         <h2>Etiquetas semánticas</h2>
                         <p class="fragment">En el último ejemplo vimos dos nuevas etiquetas: <ul class="html"><li class="fragment text-content">&lt;figure&gt;</li><li class="fragment text-content">&lt;figcaption&gt;</li></ul></p>
                         <p class="fragment">Hay muchas más que aprenderemos y adoptaremos en este curso.</p>
-                    </section>                    
+                    </section>
                 </section>
 
                 <section style="text-align: left;">
@@ -596,14 +595,14 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                     <section data-transition="fade-in fade-out">
                         <img src="images/estructura-documento-html-block-style@2x.png" alt="">
                     </section>
-                    <section>
-                        <h2>Usando CSS podemos imponer un comportamiento distinto a los elementos HTML.</h2>
-                        <p>A continuación veremos en profundidad cómo hacer esto.</p>
-                    </section>
                 </section>
                 <section style="text-align: left;">
-                     <section>
+                    <section>
                         <h2>Listas</h2>
+                        <p></p>
+
+                    </section>
+                    <section>
                         <p>HTML contiene 3 tipos de elementos para generar listas.</p>
                         <div style="float: left;">
                             <h5>Listas ordinales (ordered list)</h5>
@@ -622,15 +621,38 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                         <ul class="html">
                             <li class="text-content">&lt;dl&gt;</li>
                         </ul>
-                        </div>
                         <div class="clearfix"></div>
+                        </div>
+                    </section>
+                    <section>
+                        <p>Al mismo tiempo, existen 3 etiquetas complementarias</p>
+
+                        <div style="float: left;">
+                        <h5>Items de lsita</h5>
+                        <ul class="html">
+                            <li class="text-content">&lt;li&gt;</li>
+                        </ul>
+                        </div>
+                        <div style="float: left;">
+                        <h5>Item de definición de término</h5>
+                        <ul class="html">
+                            <li class="text-content">&lt;dt&gt;</li>
+                        </ul>
+                        </div>
+                        <div style="float: left;">
+                        <h5>Item de descripción de definición</h5>
+                        <ul class="html">
+                            <li class="text-content">&lt;dd&gt;</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        </div>
                     </section>
                     <section>
                         <h2>Listas ordinales (ordered list)</h2>
                         <ul class="html">
                             <li class="text-content">&lt;ol&gt;</li><li class="text-content">&lt;/ol&gt;</li>
                         </ul>
-                        
+
                         <div class="clearfix"></div>
                         <dl>
                             <dt>Etiqueta tipo</dt>
@@ -640,7 +662,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                             <dt>Función</dt>
                             <dd>Declara una lista ordenada</dd>
                         </dl>
-                        
+
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
                         <pre><code class="html hljs">&lt;ol type=&quot;A&quot;&gt;
@@ -648,7 +670,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
   &lt;li&gt;São Paulo&lt;/li&gt;
   &lt;li&gt;Buenos Aires&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-                        
+
                     </section>
                     <section data-transition="fade-in fade-out">
                         <img src="images/estructura-documento-html-ol@2x.png" alt="">
@@ -661,7 +683,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                             <ul class="html">
                                 <li class="text-content">&lt;ol&gt;</li><li class="text-content">&lt;/ol&gt;</li>
                             </ul>
-                            
+
                             <div class="clearfix"></div>
                             <dl>
                                 <dt>Etiqueta tipo</dt>
@@ -671,7 +693,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                                 <dt>Función</dt>
                                 <dd>Declara una lista no ordenada</dd>
                             </dl>
-                            
+
                             <div class="clearfix"></div>
                             <p>Ejemplo:</p>
                             <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
@@ -684,11 +706,35 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                         <img src="images/estructura-documento-html-ul-options@2x.png" alt="">
                     </section>
                     <section>
+                        <h2>Item de lista</h2>
+                            <ul class="html">
+                                <li class="text-content">&lt;li&gt;</li><li class="text-content">&lt;/li&gt;</li>
+                            </ul>
+
+                            <div class="clearfix"></div>
+                            <dl>
+                                <dt>Etiqueta tipo</dt>
+                                <dd>Contenido de Texto</dd>
+                            </dl>
+                            <dl>
+                                <dt>Función</dt>
+                                <dd>Declara un elemento de lista, compatible con listas ordenadas y no ordenadas</dd>
+                            </dl>
+
+                            <div class="clearfix"></div>
+                            <p>Ejemplo:</p>
+                            <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
+  &lt;li&gt;Piedra&lt;/li&gt;
+  &lt;li&gt;Papel&lt;/li&gt;
+  &lt;li&gt;Tijera&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </section>
+                    <section>
                         <h2>Listas de descripción (description list)</h2>
                             <ul class="html">
                                 <li class="text-content">&lt;dl&gt;</li><li class="text-content">&lt;/dl&gt;</li>
                             </ul>
-                            
+
                             <div class="clearfix"></div>
                             <dl>
                                 <dt>Etiqueta tipo</dt>
@@ -698,7 +744,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                                 <dt>Función</dt>
                                 <dd>Declara una lista de términos, con una descripción para cada término.</dd>
                             </dl>
-                            
+
                             <div class="clearfix"></div>
                             <p>Ejemplo:</p>
                             <pre><code class="html hljs">&lt;dl&gt;
@@ -733,9 +779,6 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                     </section>
                 </section>
                 <section style="text-align: left;">
-                    <h1>Intro a CSS</h1>
-                </section>
-                <section>
                     <h1>Enlances e imágenes</h1>
                     <ul>
                         <li><p>Setup</p></li>
@@ -745,14 +788,14 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                     </ul>
                 </section>
                 <section>
-                    
+
                     <h3>Material de referencia</h3>
                     <ul>
                         <li>https://css-tricks.com/snippets/css/</li>
                         <li>http://caniuse.com/</li>
                         <li>https://www.smashingmagazine.com/learning-css3-useful-reference-guide/</li>
                     </ul>
-                    
+
                 </section>
 
             </div>
