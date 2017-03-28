@@ -14,17 +14,24 @@
 
         <link rel="stylesheet" href="css/main.css">
 
+        <script src='components/jquery/dist/jquery.min.js'></script>
+        <script src='components/gsap/src/minified/TweenMax.min.js' type="text/javascript" charset="utf-8"></script>
+        <script src='assets/js/SplitText.min.js' type="text/javascript" charset="utf-8"></script>
+
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
-                <section style="text-align: left;" data-menu-title="Intro">
+                <section data-menu-title="meta">
+                    <h1>Slide intentionally left blak</h1>
+                </section>
+                <section style="text-align: left;" data-menu-title="Intro"  data-state="intro">
                     <h1>Parte 1: Introdución</h1>
-                    <p>CUNY 2017</p>
+                    <h2>CUNY 2017</h2>
                 </section>
 
 
-                <section style="text-align: left;">
+                <section style="text-align: left;" data-state="seccion">
                      <section>
                         <h3>Introducción</h3>
                         <ul>
@@ -73,7 +80,6 @@
                 </section>
 
                 <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Introducción - Metodología y herramientas</span>
                     <section>
                         <h2>Metodología y herramientas</h2>
                     </section>
@@ -97,9 +103,6 @@
                     </section>
                     <section><p>Al final de cada sesión podrán reutilizar el código aprendido y generar nuevas historias interactivas.</p></section>
                     <section>
-                        <span class="under">Explicar las 3 plantillas</span>
-                    </section>
-                    <section>
                         <h3>Herramientas</h3>
                     </section>
                     <section>
@@ -114,8 +117,8 @@
                         <img src="images/atom.gif">
                     </section>
                     <section>
-                        <span class="under">Foto Google Chrome</span>
-                        <span class="under">Foto Mozilla Firefox</span>
+                        <h3>Google Chrome</h3>
+                        <p>Usando el inspector web de Chrome para comprender mejor lo que hacemos</p>
                     </section>
                     <section>
                         <h2>Guía de trabajo</h2>
@@ -128,7 +131,6 @@
                     </section>
                 </section>
                 <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I  –  Introducción  –  HTML, CSS y JavaScript</span>
                     <section>
                         <h2>Introducción</h2>
                     </section>
@@ -156,12 +158,12 @@
                     <section>
                         <h3>HTML</h3>
                         <p>Puedes marcar una ejecución particular de texto como un párrafo con este HTML:</p>
-                        <pre><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
+                        <pre class="fragment"><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
                     </section>
                     <section>
                         <h3>CSS</h3>
                         <p>Luego, puedes especificar el tamaño y color del párrafo con algo de CSS:</p>
-                        <pre><code class="css">p {
+                        <pre class="fragment"><code class="css">p {
     font-size: 20px;
     color: blue;
 }</code></pre>
@@ -169,7 +171,7 @@
                     <section>
                         <h3>JavaScript</h3>
                         <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea, con algo de JavaScript</p>
-                        <pre><code class="javaScript">var p = document.getElementById('parrafo');
+                        <pre class="fragment"><code class="javaScript">var p = document.getElementById('parrafo');
 
     p.addEventListener('click', function(event) {
       p.innerHTML = 'Hiciste click en este párrafo.';
@@ -183,7 +185,6 @@
                     </section>
                 </section>
                 <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Introducción - Desarrollo Web</span>
                    <section>
                         <h2>Desarrollo Web</h2>
                    </section>
@@ -207,7 +208,6 @@
 
                 </section>
                 <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Creando una página web básica - Setup</span>
                     <section>
                         <h2>Setup / Preparación</h2>
                     </section>
@@ -226,7 +226,6 @@
                     </section>
                 </section>
                 <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Creando una página web básica - Estructura de una página web</span>
                     <section>
                         <h2>Estructura de una página web</h2>
                     </section>
@@ -234,7 +233,7 @@
                         <p>Agreguemos el siguiente código HTML a nuestro archivo 01.html.</p>
                     </section>
                     <section>
-                        <pre><code class="html hljs">&lt;!DOCTYPE html>
+                        <pre class="fragment"><code class="html hljs">&lt;!DOCTYPE html>
     &lt;html lang="es">
         &lt;head>
         &lt;title>Título de mi página&lt;/title>
@@ -247,7 +246,7 @@
     &lt;/html></code></pre>
                     </section>
                     <section>
-                        <pre><code class="html hljs">&lt;!-- Declaración de tipo de documento -->
+                        <pre class="fragment"><code class="html hljs">&lt;!-- Declaración de tipo de documento -->
 &lt;!DOCTYPE html>
     &lt;!-- Etiqueta raíz con declaración de lenguaje -->
     &lt;html lang="es">
@@ -278,17 +277,17 @@
                     </section>
                     <section>
                         <p>Primero, necesitamos decir a los navegadores que se trata de una página web HTML5 con la línea :</p>
-                        <pre><code class="html hljs">&lt;!DOCTYPE html></code></pre>
+                        <pre class="fragment"><code class="html hljs">&lt;!DOCTYPE html></code></pre>
                         <p>Esta es sólo una cadena especial que los navegadores buscan cuando intentan mostrar nuestra página web.
                     </p></section>
                     <section style="text-align: left;" >
                         <p>Declaración de tipo de documento en HTML 4.01</p>
-                        <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC
+                        <pre class="fragment"><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC
         "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
                         <br>
                         <p>Declaración de tipo de documento en HTML 5</p>
-                        <pre><code class="html hljs" data-trim contenteditable>
+                        <pre class="fragment"><code class="html hljs" data-trim contenteditable>
 
                         &lt;!DOCTYPE html&gt;
 
@@ -423,7 +422,7 @@
 
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;title&gt;Armas de distracción masiva&lt;/title&gt;</code></pre>
+                        <pre class="fragment"><code class="html hljs">&lt;title&gt;Armas de distracción masiva&lt;/title&gt;</code></pre>
 
                     </section>
                     <section>
@@ -448,7 +447,7 @@
                         </dl>
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;h1&gt;Encabezado Nivel 1&lt;/h1&gt;
+                        <pre class="fragment"><code class="html hljs">&lt;h1&gt;Encabezado Nivel 1&lt;/h1&gt;
 &lt;h2&gt;Encabezado Nivel 2&lt;/h2&gt;
 &lt;h3&gt;Encabezado Nivel 3&lt;/h3&gt;
 &lt;h4&gt;Encabezado Nivel 4&lt;/h4&gt;
@@ -476,7 +475,7 @@
 
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;p&gt;Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p&gt;</code></pre>
+                        <pre class="fragment"><code class="html hljs">&lt;p&gt;Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p&gt;</code></pre>
 
                     </section>
                     <section>
@@ -499,7 +498,7 @@
 
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;p&gt;políticos y periodistas se preguntan cómo hacer frente a eventuales
+                        <pre class="fragment"><code class="html hljs">&lt;p&gt;políticos y periodistas se preguntan cómo hacer frente a eventuales
 &lt;a href="http://internacional.elpais.com/internacional/..."&gt;campañas de uso continuado de datos falsos&lt;/a&gt;,
 que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></pre>
                     </section>
@@ -529,8 +528,10 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
                 <section style="text-align: left;">
                      <section>
-                        <h2>Elementos de bloque y elementos dentro de línea</h2>
-                        <p>Todos los elementos HTML tienen un valor por default para visualizarse, dependiendo en el tipo de contenido que sea.</p>
+                        <h1>Elementos de bloque y elementos dentro de línea</h1>
+                     </section>
+                     <section>
+                         <p>Todos los elementos HTML tienen un valor por default para visualizarse, dependiendo en el tipo de contenido que sea.</p>
                      </section>
                      <section>
                          <h2>Elementos de bloque (block)</h2>
@@ -588,9 +589,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                 </section>
                 <section style="text-align: left;">
                     <section>
-                        <h2>Listas</h2>
-                        <p></p>
-
+                        <h1>Listas</h1>
                     </section>
                     <section>
                         <p>HTML contiene 3 tipos de elementos para generar listas.</p>
@@ -655,7 +654,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
                         <div class="clearfix"></div>
                         <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;ol type=&quot;A&quot;&gt;
+                        <pre class="fragment"><code class="html hljs">&lt;ol type=&quot;A&quot;&gt;
   &lt;li&gt;Ciudad de México&lt;/li&gt;
   &lt;li&gt;São Paulo&lt;/li&gt;
   &lt;li&gt;Buenos Aires&lt;/li&gt;
@@ -686,7 +685,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
                             <div class="clearfix"></div>
                             <p>Ejemplo:</p>
-                            <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
+                            <pre class="fragment"><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
   &lt;li&gt;Theresa May&lt;/li&gt;
   &lt;li&gt;David Cameron&lt;/li&gt;
   &lt;li&gt;Gordon Brown&lt;/li&gt;
@@ -713,7 +712,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
                             <div class="clearfix"></div>
                             <p>Ejemplo:</p>
-                            <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
+                            <pre class="fragment"><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
   &lt;li&gt;Piedra&lt;/li&gt;
   &lt;li&gt;Papel&lt;/li&gt;
   &lt;li&gt;Tijera&lt;/li&gt;
@@ -737,7 +736,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
                             <div class="clearfix"></div>
                             <p>Ejemplo:</p>
-                            <pre><code class="html hljs">&lt;dl&gt;
+                            <pre class="fragment"><code class="html hljs">&lt;dl&gt;
   &lt;dt&gt;Nombre:&lt;/dt&gt;
   &lt;dd&gt;John Connor&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
@@ -748,7 +747,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                     <section>
                         <h2>Listas anidadas</h2>
                         <p>En HTML es posible anidar contenido en listas de este modo.</p>
-                        <pre><code class="html hljs">&lt;ol&gt;
+                        <pre class="fragment"><code class="html hljs">&lt;ol&gt;
   &lt;li&gt;Aprender HTML&lt;/li&gt;
   &lt;li&gt;Aprender CSS&lt;/li&gt;
   &lt;li&gt;
@@ -773,8 +772,10 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
                         <p>Comencemos creando una <strong>nueva carpeta</strong> en nuestra computadora, llamemosla <span class="highlight"><strong>ejercicios</strong></span>.<br>Luego, dentro de la carpeta, crearemos un <strong>nuevo archivo HTML</strong> llamado <span class="highlight"><strong>01.html</strong></span>.</p>
                     </section>
                     <section>
-                    <h1>Enlances e imágenes</h1>
-
+                        <h1>Enlances e imágenes</h1>
+                    </section>
+                    <section>
+                        <p>Demo Reveal.js</p>
                     </section>
                 </section>
                 <section>
@@ -793,7 +794,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
         <script src="components/reveal.js/lib/js/head.min.js"></script>
         <script src="components/reveal.js/js/reveal.js"></script>
-
+        <script src="assets/js/custom-reveal.js"></script>
         <script>
             // More info https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({

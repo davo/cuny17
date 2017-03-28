@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Intro a Reveal.js</title>
+
+        <link rel="stylesheet" href="../../../components/reveal.js/css/reveal.css">
+
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="../../../components/highlight/src/styles/xcode.css">
+
+        <link rel="stylesheet" href="assets/css/coolmaster.css">
+
+        <script src='../../../components/jquery/dist/jquery.min.js'></script>
+        <script src='../../../components/gsap/src/minified/TweenMax.min.js' type="text/javascript" charset="utf-8"></script>
+        <script src='../../../assets/js/SplitText.min.js' type="text/javascript" charset="utf-8"></script>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-menu-title="meta" data-background-color="#e8edf3">
+                    <h1>Slide intentionally left blank</h1>
+                </section>
+                <section data-background-video="assets/videos/674888138.mp4" data-background-video-loop data-background-video-muted class="background-content">
+                    <h1>Hacking Reveal.js</h1>
+                    <h2>CUNY 2017</h2>
+                </section>
+
+                <section data-background-color="#22264b" data-state="hacer">
+                    <h2>¿Qué vamos a hacer?</h2>
+                    <p>Aprender sobre las posibilidades de usar reveal.js para presentar contenido.</p>
+                </section>
+
+                <section data-background-image="assets/images/tim-marshall-222944.jpg" class="background-content">
+                    <h2>Imágenes</h2>
+                    <h3>Fullscreen</h3>
+                </section>
+                <section>
+                    <section data-background="#dddddd">
+                        <h2>Slide Backgrounds</h2>
+                        <p>
+                            Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+                        </p>
+                        <a href="#" class="navigate-down">
+                            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                        </a>
+                    </section>
+                    <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+                        <h2>Image Backgrounds</h2>
+                        <pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+                    </section>
+                    <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+                        <h2>Tiled Backgrounds</h2>
+                        <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+                    </section>
+                    <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+                        <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                            <h2>Video Backgrounds</h2>
+                            <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+                        </div>
+                    </section>
+                </section>
+
+
+
+            </div>
+        </div>
+
+        <script src="../../../components/reveal.js/lib/js/head.min.js"></script>
+        <script src="../../../components/reveal.js/js/reveal.js"></script>
+        <script src="../../../assets/js/custom-theme-reveal.js"></script>
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                controls: false,
+                center: true,
+                progress: false,
+                transition: 'none'
+            });
+        </script>
+    </body>
+</html>
