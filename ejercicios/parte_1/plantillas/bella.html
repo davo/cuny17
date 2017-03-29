@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Intro a Reveal.js</title>
+
+        <link rel="stylesheet" href="../../../components/reveal.js/css/reveal.css">
+
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="../../../components/highlight/src/styles/xcode.css">
+
+        <link rel="stylesheet" href="assets/css/bella.css">
+
+        <script src='../../../components/jquery/dist/jquery.min.js'></script>
+        <script src='../../../components/gsap/src/minified/TweenMax.min.js' type="text/javascript" charset="utf-8"></script>
+        <script src='../../../assets/js/SplitText.min.js' type="text/javascript" charset="utf-8"></script>
+
+    </head>
+    <body>
+    <!--
+
+    Lista de tareas
+
+
+    ✅ 1. Titulo principal
+    2. Agregar audio
+    3.
+
+    -->
+
+        <div class="reveal">
+            <div class="slides">
+                <!-- 17681379071_7c51b8290e_k.jpg -->
+                    <section data-background-image="assets/images/17681379071_7c51b8290e_k.jpg" class="background-content">
+                         <h1>Ganarse la vida como prestamista del Bronx</h1>
+                    </section>
+
+                    <section data-background-color="#3b3a36">
+
+                        <section><p>Ser prestamista en Nueva York es trabajar en un mercado gris. Se viola la ley si se cobran altos intereses. Mucha gente no paga y se esconde. A veces cuden el miedo y las amenazas. </p></section>
+
+                        <section><p>Pero una inmigrante dominicana considera el dinero de prestar dinero como un servicio a la comunidad.</p></section>
+
+                        <section><p>¿Quiénes acuden a ella? ¿Cómo hace esta mujer cuando no le pagan?</p></section>
+
+                       <section> <p>Le invitamos a conocer a Ivelisse García, quien recorre las calles latinas del Bronx para hacer un negocio que ya se practicaba en la antigua Roma: prestar dinero.</p></section>
+                </section>
+
+                <section data-background-color="#3b3a36">
+                    <h2 class ="fragment" data-audio-src="assets/audios/prestamista-bronx.mp3">
+                        Escuchemos a Ivelisse García
+                    </h2>
+                </section>
+
+                <!--
+                ###
+                Ejemplo de video de fondo
+                ###
+
+                <section data-background-video="assets/videos/Turntable - 8437.mp4" data-background-video-loop data-background-video-muted class="background-content">
+                    <h1>Hacking Reveal.js</h1>
+                    <h2>CUNY 2017</h2>
+                </section>
+
+                -->
+
+
+                <!--
+                ###
+                Ejemplo de video de Youtube Embebido
+                ###
+
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A1_QKF5Ge6U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                 -->
+
+                <!--
+                ###
+                Ejemplo de audio de Soundcloud Embebido
+                ###
+                <section>
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314757427&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                </section>
+                -->
+                <section data-background-color="#22264b" data-state="hacer">
+                    <h2>¿Qué vamos a hacer?</h2>
+                    <p>Aprender sobre las posibilidades de usar reveal.js para presentar contenido.</p>
+                </section>
+
+
+
+
+
+            </div>
+        </div>
+
+        <script src="../../../components/reveal.js/lib/js/head.min.js"></script>
+        <script src="../../../components/reveal.js/js/reveal.js"></script>
+        <script src="../../../assets/js/custom-theme-reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                controls: false,
+                center: true,
+                progress: false,
+
+                audio: {
+                    prefix: 'assets/audio/',   // audio files are stored in the "audio" folder
+                    suffix: '.mp3',     // audio files have the ".ogg" ending
+                    textToSpeechURL: null,  // the URL to the text to speech converter
+                    defaultNotes: false,    // use slide notes as default for the text to speech converter
+                    defaultText: false,     // use slide text as default for the text to speech converter
+                    advance: 0,         // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+                    autoplay: true,    // automatically start slideshow
+                    defaultDuration: 5, // default duration in seconds if no audio is available
+                    playerOpacity: 0.5,    // opacity value of audio player if unfocused
+                    startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+                },
+
+                dependencies: [
+                    { src: '../../../components/reveal.js-plugins/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
+                ]
+            });
+
+
+        </script>
+    </body>
+</html>
