@@ -1,6 +1,6 @@
 # Introducción a HTML 5, CSS 3 y JavaScript
 
-Este taller fue desarrollado por David Galavotti ([@pixelbeat](https://twitter.com/pixelbeat)) en coordinación con
+Este taller fue desarrollado por David Galavotti ([/davo](https://github.com/davo)) en coordinación con el profesor Miguel Paz ([/miguelpaz](https://github.com/miguelpaz))
 
 ## Parte I
 
