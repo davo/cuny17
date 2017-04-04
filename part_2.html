@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Intro a HTML 5, CSS 3 y JavaScript</title>
+        <title>Intro a CSS 3</title>
 
         <link rel="stylesheet" href="components/reveal.js/css/reveal.css">
 
@@ -12,749 +12,144 @@
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="components/highlight/src/styles/xcode.css">
 
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main-part-2.css">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+        <script src='components/jquery/dist/jquery.min.js'></script>
+        <script src='components/gsap/src/minified/TweenMax.min.js' type="text/javascript" charset="utf-8"></script>
+        <script src='assets/js/SplitText.min.js' type="text/javascript" charset="utf-8"></script>
 
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
                 <section style="text-align: left;" data-menu-title="Intro">
-                    <h1>Parte 1: Introdución</h1>
-                    <p>CUNY 2017</p>
+                    <h1>Parte 2: CSS 3</h1>
+                    <h3>CUNY 2017</h3>
                 </section>
 
 
                 <section style="text-align: left;">
                      <section>
-                        <h3>Recapitulación</h3>
+                        <h2>Recapitulación</h2>
                         <ul>
-                            <li><p>HTML y sus entidades</p></li>
-                            <li><p>Repaso de CSS</p></li>
+                            <li><h4>Repasemos lo que vimos en HTML 5</h4></li>
+                            <li><h4>Introducción a CSS</h4></li>
+                            <li><h4>Sintaxis básica</h4></li>
                         </ul>
                     </section>
                     <section>
-                        <h3>Selectores CSS</h3>
+                        <h2>Selectores CSS</h2>
+                        <p>Referencia: <a href="https://css-tricks.com/how-css-selectors-work/">https://css-tricks.com/how-css-selectors-work/</a></p>
                         <ul>
-                            <li><p>Atributo de clases (class)</p></li>
-                            <li><p>Atributo de identidad (id)</p></li>
-                            <li><p>Especificidades de los selectores</p></li>
-                            <li><p>Colores hexagesimales, RGB y colores RGBa</p></li>
+                            <li><h4>Selectores de identidad (id)</h4></li>
+                            <li><h4>Selectores de clases (class)</h4></li>
+                            <li><h4>Selectores de etiqueta</h4></li>
+                            <li><h4>Otros tipos de selectores</h4></li>
+                            <li><h4>Especificidades de los selectores</h4></li>
                         </ul>
                     </section>
-                </section>
 
-                <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Introducción - Metodología y herramientas</span>
                     <section>
-                        <h2>Metodología y herramientas</h2>
-                    </section>
-                    <section>
-                        <p class="fragment">La mejor manera de <span class="highlight">aprender es</span> a través de <span class="highlight">construir algo</span> que te interese.</p>
-                        <p class="fragment">A medida que desarrolles habilidades, comprenderás lo que es posible y eso te inspirará a crear nuevos proyectos.</p>
-                    </section>
-                    <section>
-                        <p class="fragment">Al aplicar tus <span class="highlight">nuevas habilidades</span> en un proyecto interesante, podrás disfrutar más del proceso de aprendizaje y aprender a un ritmo más rápido.</p>
-                        <p class="fragment">Comienza a trabajar en un <span class="highlight">proyecto propio</span> tan pronto como puedas, mientras vas a ir ganando más habilidades, siguiendo éstas sesiones.</p>
-                    </section>
-                    <section>
-                        <h2>5 minutos de definición</h2>
-                    </section>
-                    <section>
-                        <h3>Programar contenido desde cero</h3>
-                        <p>Durante las sesiones crearemos 3 plantillas para la publicación de historias interactivas.</p>
-                    </section>
-                    <section>
-                        <p>En cada plantilla aprenderemos fundamentos básicos.</p>
-                    </section>
-                    <section><p>Al final de cada sesión podrán reutilizar el código aprendido y generar nuevas historias interactivas.</p></section>
-                    <section>
-                        <span class="under">Explicar las 3 plantillas</span>
-                    </section>
-                    <section>
-                        <h3>Herramientas</h3>
-                    </section>
-                    <section>
-                        <p>Para estas sesiones, un editor de texto y un navegador web es todo lo que vamos a usar.</p>
-                    </section>
-                    <section>
-                        <h4>Sublime Text 3</h4>
-                        <img src="images/st.gif">
-                    </section>
-                    <section>
-                        <h4>Atom</h4>
-                        <img src="images/atom.gif">
-                    </section>
-                    <section>
-                        <span class="under">Foto Google Chrome</span>
-                        <span class="under">Foto Mozilla Firefox</span>
-                    </section>
-                    <section>
-                        <h2>Guía de trabajo</h2>
+                        <h3>Modelo de caja, bordes y fondos</h3>
                         <ul>
-                            <li><p>Escribir código en tu editor de texto</p></li>
-                            <li><p>Abrirlo en un navegador web para ver cómo se ve</p></li>
-                            <li><p>Documentar tu código</p></li>
-                            <li><p>Compartí lo que aprendiste</p></li>
+                            <li><h4>Modelo de caja</h4></li>
+                            <li><h4>Bordes de objetos</h4></li>
+                            <li><h4>Propiedades de fondos</h4></li>
                         </ul>
                     </section>
-                </section>
-                <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I  –  Introducción  –  HTML, CSS y JavaScript</span>
                     <section>
-                        <h2>Introducción</h2>
+                        <h3>Posicionamiento y elementos flotantes</h3>
+                        <ul></ul>
                     </section>
                     <section>
-                        <p>HyperText Markup Language <span class="highlight">HTML</span>, Cascading Style Sheets <span class="highlight">CSS</span>, y JavaScript <span class="highlight">JS</span> son los principales lenguajes que hacen que la web funcione.</p>
+                        Librerías CSS
                     </section>
                     <section>
-                        <p>Estos lenguajes están estrechamente relacionados, pero están diseñados para tareas muy específicas. Vamos a comprender cómo interactúan durante esta sesión.</p>
-                    </section>
-                    <section>
-                        <p><span>HTML</span> es para agregar significado a tu contenido, dandole marcado (markup).</p>
-                    </section>
-                    <section>
-                        <p><span>CSS</span> es para darle formato (estilo) al contenido marcado.</p>
-                    </section>
-                    <section>
-                        <p><span>JavaScript</span> es para darle interacción al formato y el contenido marcado.</p>
-                    </section>
-                    <section style="text-align: center;">
-                        <img src="images/html-css-javascript-905348.png">
-                    </section>
-                    <section>
-                        <h2>¿Cómo funciona cada uno?</h2>
-                    </section>
-                    <section>
-                        <h3>HTML</h3>
-                        <p>Puedes marcar una ejecución particular de texto como un párrafo con este HTML:</p>
-                        <pre><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
-                    </section>
-                    <section>
-                        <h3>CSS</h3>
-                        <p>Luego, puedes especificar el tamaño y color del párrafo con algo de CSS:</p>
-                        <pre><code class="css">p {
-    font-size: 20px;
-    color: blue;
-}</code></pre>
-                    </section>
-                    <section>
-                        <h3>JavaScript</h3>
-                        <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea, con algo de JavaScript</p>
-                        <pre><code class="javaScript">var p = document.getElementById('parrafo');
 
-    p.addEventListener('click', function(event) {
-      p.innerHTML = 'Hiciste click en este párrafo.';
-    });</code></pre>
-                    </section>
-                    <section>
-                        <h3>Conclusión</h3>
-                        <p>HTML, CSS y JavaScript son lenguajes totalmente diferentes.</p>
-                        <p>La mayoría de los sitios web dependen de los tres, pero la apariencia de cada sitio está determinada por HTML y CSS.</p>
+                        Diseño en la web, colores y tipografías
+
+                            Colores
+                                https://www.w3schools.com/colors/colors_names.asp
+                                Hexagesimales, RGB y colores RGBa
 
                     </section>
-                </section>
-                <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Introducción - Desarrollo Web</span>
-                   <section>
-                        <h2>Desarrollo Web</h2>
-                   </section>
-                   <section>
-                       <p>Lamentablemente, dominar HTML, CSS y JavaScript es sólo un requisito previo para convertirse en un desarrollador web. Hay un montón de otras habilidades prácticas necesarias para ejecutar un sitio web.</p>
-                       <p>Veamos algunas...</p>
-                   </section>
                     <section>
+                        Media Queries y diseño web responsivo
+                    </section>
+                </section>
+
+                <section style="text-align: left;">
+                    <section>
+                        <h2>Introducción a CSS 3</h2>
+                    </section>
+                    <section>
+                        <h3>CSS: Conceptos básicos</h3>
+                        <p>Cascading Stylesheets (CSS) es la tecnología que usamos para darle <span class="highlight">diagramación y estilo</span> a nuestras páginas web.</p>
+                    </section>
+                    <section>
+                        <h3>¿Cómo CSS afecta un documento HTML?</h3>
+                        <p>Los navegadores aplican las reglas CSS a un documento modificando el modo en el que lo presenta.</p>
+                        <p>Aprendamos cómo se forma una <strong>regla CSS</strong></p>
+                    </section>
+                    <section>
+                        <h3>Composición de un reglas CSS</h3>
                         <ul>
-                            <li><p class="fragment">Optimizar y reutilizar código en módulos</p></li>
-                            <li><p class="fragment">Instalar tu propio servidor web</p></li>
-                            <li><p class="fragment">Migrar un sitio desde tu computadora a un servidor real</p></li>
-                            <li><p class="fragment">Instalar un sistema de versionamiento</p></li>
-                            <li><p class="fragment">Apuntar un dominio a un servidor</p></li>
-                            <li><p class="fragment">Y muchos otros <em>skills</em> más...</p></li>
+                            <li><p><strong>Propiedades</strong>: Un conjunto de propiedades, que tienen valores, los cuales modifican como el HTML es presentado.</p></li>
+                            <li><p><strong>Selectores:</strong> Un selector, el cual selección uno o varios elementos para aplicar las valores del conjunto de propiedades.</p></li>
                         </ul>
                     </section>
                     <section>
-                        <p>Vamos a tratar de dar el primer paso, comprendiendo bien estos 3 elementos básicos del desarrollo web.</p>
-                    </section>
-
-                </section>
-                <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Creando una página web básica - Setup</span>
-                    <section>
-                        <h2>Setup / Preparación</h2>
+                        <h3>Demo</h3>
+                        <p>Abrir los siguientes archivos:</p>
+                        <ul>
+                            <li><p>ejercicios/parte_2/01.html</p></li>
+                            <li><p>ejercicios/parte_2/01.css</p></li>
+                        </ul>
                     </section>
                     <section>
-                        <p>Comencemos creando una <strong>nueva carpeta</strong> en nuestra computadora, llamemosla <span class="highlight"><strong>ejercicios</strong></span>.<br>Luego, dentro de la carpeta, crearemos un <strong>nuevo archivo HTML</strong> llamado <span class="highlight"><strong>01.html</strong></span>.</p>
-                    </section>
-
-                    <section>
-                        <p>Este archivo HTML representa una <strong>página web</strong>, y es donde pondremos todo nuestro código.</p>
-                    </section>
-                    <section>
-                        <p>El flujo de trabajo básico hoy será <strong>editar HTML</strong> en el editor de texto y luego <strong>ver los cambios en un navegador web</strong>.</p>
-                    </section>
-                    <section>
-                        <img src="images/web-dev-workflow-1faddb.png">
+                        <h3>Conclusión I</h3>
+                        <p>Escribir CSS es crear <strong>reglas</strong> de <strong>diagramación</strong> y <strong>diseño</strong></p>
                     </section>
                 </section>
                 <section style="text-align: left;">
-                    <span class="sectionTitle">Parte I – Creando una página web básica - Estructura de una página web</span>
+                    <h2>¿Cómo escribimos de CSS?</h2>
                     <section>
-                        <h2>Estructura de una página web</h2>
-                    </section>
-                    <section>
-                        <p>Agreguemos el siguiente código HTML a nuestro archivo 01.html.</p>
-                    </section>
-                    <section>
-                        <pre><code class="html hljs">&lt;!DOCTYPE html>
-    &lt;html lang="es">
-        &lt;head>
-        &lt;title>Título de mi página&lt;/title>
-        &lt;/head>
-        &lt;body>
-            &lt;h1>Armas de distracción masiva&lt;/h1>
-            &lt;h2>La agnotología es el estudio de la fabricación premeditada de desconocimiento&lt;/h2>
-            &lt;p>Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p>
-        &lt;/body>
-    &lt;/html></code></pre>
-                    </section>
-                    <section>
-                        <pre><code class="html hljs">&lt;!-- Declaración de tipo de documento -->
-&lt;!DOCTYPE html>
-    &lt;!-- Etiqueta raíz con declaración de lenguaje -->
-    &lt;html lang="es">
-        &lt;!-- Metadata de la página -->
-        &lt;head>
-        &lt;!-- Titulo de la página -->
-        &lt;title>Armas de distracción masiva&lt;/title>
-        &lt;!-- Cierre de la etiqueta HEAD -->
-        &lt;/head>
-        &lt;!-- Etiqueta de texto encabezado principal -->
-        &lt;body>
-            &lt;!-- Etiqueta de texto encabezado principal -->
-            &lt;h1>Armas de distracción masiva&lt;/h1>
-            &lt;!-- Etiqueta de texto encabezado secundario -->
-            &lt;h2>La agnotología es el estudio de la fabricación premeditada de desconocimiento&lt;/h2>
-            &lt;!-- Etiqueta de texto de párrafo -->
-            &lt;p>Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p>
-        &lt;!-- Cierre de la etiqueta BODY -->
-        &lt;/body>
-    &lt;!-- Cierre de la etiqueta principal HTML -->
-    &lt;/html></code></pre>
-                    </section>
-                    <section>
-                        <img src="images/estructura-documento-html.png" alt="">
-                    </section>
-                    <section>
-                        <h2>Veamos que és cada parte</h2>
-                    </section>
-                    <section>
-                        <p>Primero, necesitamos decir a los navegadores que se trata de una página web HTML5 con la línea :</p>
-                        <pre><code class="html hljs">&lt;!DOCTYPE html></code></pre>
-                        <p>Esta es sólo una cadena especial que los navegadores buscan cuando intentan mostrar nuestra página web.
-                    </p></section>
-                    <section style="text-align: left;" >
-                        <p>Declaración de tipo de documento en HTML 4.01</p>
-                        <pre><code class="html hljs" data-trim contenteditable>&lt;!DOCTYPE html PUBLIC
-        "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
-                        <br>
-                        <p>Declaración de tipo de documento en HTML 5</p>
-                        <pre><code class="html hljs" data-trim contenteditable>
-
-                        &lt;!DOCTYPE html&gt;
-
-                        </code></pre>
-                    </section>
-                    <section>
-                        <img src="images/html-tags-elements-72813b.png" alt="">
-                    </section>
-                    <section>
-                        <p>Un documento HTML está compuesto por <span class="highlight">etiquetas</span> (tags), que le dan marcado a nuestro contenido.</p>
-                        <p>Cada etiqueta está compuesta por <span class="highlight">elementos</span> y <span class="highlight">atributos</span>.</p>
-                    </section>
-                    <section>
-                        <h3>Elementos principales</h3>
-                        <p>Etiqueta principal o raíz</p>
-                        <ul class="html">
-                            <li class="root">&lt;html&gt;</li>
-                        </ul>
-                        <p>Etiquetas de metadata</p>
-                        <ul class="html">
-                            <li class="metadata">&lt;head&gt;</li>
-                            <li class="metadata">&lt;link&gt;</li>
-                            <li class="metadata">&lt;meta&gt;</li>
-                            <li class="metadata">&lt;style&gt;</li>
-                            <li class="metadata">&lt;title&gt;</li>
-                        </ul>
-                        <p>Etiquetas de contenido</p>
-                        <ul class="html">
-                            <li class="content">&lt;header&gt;</li>
-                            <li class="content">&lt;footer&gt;</li>
-                            <li class="content">&lt;section&gt;</li>
-                            <li class="content">&lt;nav&gt;</li>
-                            <li class="content">&lt;article&gt;</li>
-                            <li class="content">&lt;aside&gt;</li>
-                            <li class="content">&lt;h1–h6&gt;</li>
-                        </ul>
-                        </section>
-                        <section>
-                        <h3>Elementos para contenido</h3>
-                        <p>Etiquetas de contenido de texto</p>
-                        <ul class="html">
-                            <li class="text-content">&lt;div&gt;</li>
-                            <li class="text-content">&lt;p&gt;</li>
-                            <li class="text-content">&lt;pre&gt;</li>
-                            <li class="text-content">&lt;figure&gt;</li>
-                            <li class="text-content">&lt;figcaption&gt;</li>
-                            <li class="text-content">&lt;hr&gt;</li>
-                            <li class="text-content">&lt;ol&gt;</li>
-                            <li class="text-content">&lt;ul&gt;</li>
-                            <li class="text-content">&lt;li&gt;</li>
-                        </ul>
-                        <p>Etiquetas de contenido "Inline"</p>
-                        <ul class="html">
-                            <li class="inline-text">&lt;a&gt;</li>
-                            <li class="inline-text">&lt;abbr&gt;</li>
-                            <li class="inline-text">&lt;code&gt;</li>
-                            <li class="inline-text">&lt;em&gt;</li>
-                            <li class="inline-text">&lt;i&gt;</li>
-                            <li class="inline-text">&lt;span&gt;</li>
-                            <li class="inline-text">&lt;strong&gt;</li>
-                        </ul>
-                        <p>Etiquetas de contenido multimedia</p>
-                        <ul class="html">
-                            <li class="image-multimedia">&lt;audio&gt;</li>
-                            <li class="image-multimedia">&lt;img&gt;</li>
-                            <li class="image-multimedia">&lt;video&gt;</li>
-                        </ul>
-                        </section>
-                        <section>
-                        <h3>Elementos para contenidos especiales</h3>
-                        <p>Etiquetas para tablas</p>
-                        <ul class="html">
-                            <li class="table">&lt;table&gt;</li>
-                            <li class="table">&lt;tbody&gt;</li>
-                            <li class="table">&lt;tr&gt;</li>
-                            <li class="table">&lt;td&gt;</li>
-                        </ul>
-                        <p>Etiquetas para formularios</p>
-                        <ul class="html">
-                            <li class="form">&lt;form&gt;</li>
-                            <li class="form">&lt;input&gt;</li>
-                            <li class="form">&lt;textarea&gt;</li>
-                            <li class="form">&lt;button&gt;</li>
-                            <li class="form">&lt;label&gt;</li>
-                            <li class="form">&lt;select&gt;</li>
-                            <li class="form">&lt;option&gt;</li>
-                        </ul>
-                        <p>Etiquetas de programación</p>
-                        <ul class="html">
-                            <li class="scripting">&lt;script&gt;</li>
-                            <li class="scripting">&lt;canvas&gt;</li>
+                        <p>Abrir los siguientes archivos:</p>
+                        <ul>
+                            <li><p>ejercicios/parte_2/02.html</p></li>
+                            <li><p>ejercicios/parte_2/02.css</p></li>
                         </ul>
                     </section>
                     <section>
-                        <h3>Atributos</h3>
-                        <p>Estos atributos sirven para darle instrucciones especiales a los elementos.</p>
-                        <ul class="html">
-                            <li class="inline-text attribute">id</li>
-                            <li class="inline-text attribute">href</li>
-                            <li class="inline-text attribute">style</li>
-                            <li class="inline-text attribute">class</li>
-                            <li class="inline-text attribute">data-*</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Etiquetas</h3>
-                        <p>Finalmente vemos como se compone una etiqueta.</p>
-                        <ul class="html tags">
-                            <li class="metadata">&lt;link <span class="attribute fragment">rel=&quot;stylesheet&quot;</span> <span class="attribute fragment">type=&quot;text/css&quot;</span> <span class="attribute fragment">href=&quot;theme.css&quot;</span>&gt;</li>
-                            <li class="inline-text">&lt;a <span class="attribute fragment">href=&quot;https://www.propublica.org/&quot;</span> <span class="attribute fragment">target=&quot;_blank&quot;</span>&gt;ProPublica&lt;/a&gt;</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2>Título en HTML</h2>
-                        <ul class="html">
-                            <li class="metadata">&lt;title&gt;</li><li class="metadata">&lt;/title&gt;</li>
-                        </ul>
-
-                        <div class="clearfix"></div>
-                        <dl>
-                            <dt>Etiqueta tipo</dt>
-                            <dd>metadata</dd>
-                        </dl>
-                        <dl>
-                            <dt>Función</dt>
-                            <dd>Declara el titulo del documento</dd>
-                        </dl>
-                        <dl>
-                            <dt>Buena práctica</dt>
-                            <dd>[Nombre de la sección - Nombre del sitio]</dd>
-                        </dl>
-
-                        <div class="clearfix"></div>
-                        <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;title&gt;Armas de distracción masiva&lt;/title&gt;</code></pre>
 
                     </section>
-                    <section>
-                        <img src="images/html-title.png" alt="" class="split right">
-                    </section>
-                    <section>
-                        <h2>Encabezados en HTML</h2>
-                        <ul class="html"><li class="content">&lt;h1&gt;</li><li class="content">&lt;/h1&gt;</li><li class="content">&lt;...&gt;</li><li class="content">&lt;h6&gt;</li><li class="content">&lt;/h6&gt;</li></ul>
-
-                        <div class="clearfix"></div>
-                        <dl>
-                            <dt>Etiqueta tipo</dt>
-                            <dd>Contenido, sección</dd>
-                        </dl>
-                        <dl>
-                            <dt>Función</dt>
-                            <dd>Declara el texto de encabezado de una sección del documento.</dd>
-                        </dl>
-                        <dl>
-                            <dt>Buena práctica</dt>
-                            <dd>La información de encabezamiento puede ser utilizada por robots para indexar un documento.</dd>
-                        </dl>
-                        <div class="clearfix"></div>
-                        <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;h1&gt;Encabezado Nivel 1&lt;/h1&gt;
-&lt;h2&gt;Encabezado Nivel 2&lt;/h2&gt;
-&lt;h3&gt;Encabezado Nivel 3&lt;/h3&gt;
-&lt;h4&gt;Encabezado Nivel 4&lt;/h4&gt;
-&lt;h5&gt;Encabezado Nivel 5&lt;/h5&gt;
-&lt;h6&gt;Encabezado Nivel 6&lt;/h6&gt;</code></pre>
-
-                    </section>
-                    <section>
-                        <img src="images/estructura-documento-html-encabezados.png" alt="">
-                    </section>
-                    <section>
-                        <h2>Párrafos en HTML</h2>
-                        <ul class="html"><li class="content">&lt;p&gt;</li><li class="content">&lt;/p&gt;</li></ul>
-
-                        <div class="clearfix"></div>
-                        <dl>
-                            <dt>Etiqueta tipo</dt>
-                            <dd>Contenido</dd>
-                        </dl>
-                        <dl>
-                            <dt>Función</dt>
-                            <dd>Representa un párrafo de texto.</dd>
-                        </dl>
-
-
-                        <div class="clearfix"></div>
-                        <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;p&gt;Se aproximan las elecciones francesas y alemanas y, en uno y otro país, políticos y periodistas se preguntan...&lt;/p&gt;</code></pre>
-
-                    </section>
-                    <section>
-                        <h2>Links en HTML</h2>
-                        <ul class="html"><li class="content">&lt;a href="/link" target=""&gt;</li><li class="content">&lt;/a&gt;</li></ul>
-
-                        <div class="clearfix"></div>
-                        <dl>
-                            <dt>Etiqueta tipo</dt>
-                            <dd>Contenido</dd>
-                        </dl>
-                        <dl>
-                            <dt>Función</dt>
-                            <dd>Crea un hipervínculo a otras páginas web, archivos, ubicaciones dentro de la misma página, direcciones de correo electrónico o cualquier otra URL.</dd>
-                        </dl>
-                        <dl>
-                            <dt>Buenas prácticas</dt>
-                            <dd>El texto del enlace debe hacer referencia al recurso enlazado.</dd>
-                        </dl>
-
-                        <div class="clearfix"></div>
-                        <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;p&gt;políticos y periodistas se preguntan cómo hacer frente a eventuales
-&lt;a href="http://internacional.elpais.com/internacional/..."&gt;campañas de uso continuado de datos falsos&lt;/a&gt;,
-que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></pre>
-                    </section>
-                    <section>
-                        <h2>Ahora veamos todo esto junto</h2>
-                    </section>
-
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html@2x.png" alt="">
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-links@2x.png" alt="">
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-figcaption@2x.png" alt="">
-                    </section>
-                    <section>
-                        <h2>Hola, HTML 5...</h2>
-                        <p class="fragment">HTML 5 incorpora etiquetas semánticas para fomentar una mejor tarea a la hora de darle formato al contenido.</p>
-                    </section>
-                    <section>
-                        <h2>Etiquetas semánticas</h2>
-                        <p class="fragment">En el último ejemplo vimos dos nuevas etiquetas: <ul class="html"><li class="fragment text-content">&lt;figure&gt;</li><li class="fragment text-content">&lt;figcaption&gt;</li></ul></p>
-                        <p class="fragment">Hay muchas más que aprenderemos y adoptaremos en este curso.</p>
-                    </section>
-                </section>
-
-                <section style="text-align: left;">
-                     <section>
-                        <h2>Elementos de bloque y elementos dentro de línea</h2>
-                        <p>Todos los elementos HTML tienen un valor por default para visualizarse, dependiendo en el tipo de contenido que sea.</p>
-                     </section>
-                     <section>
-                         <h2>Elementos de bloque (block)</h2>
-                         <p>Un elemento de nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha hasta donde puede).</p>
-                     </section>
-                     <section>
-                        <h3>Block Elements</h3>
-                        <ul class="html">
-                            <li class="content">&lt;header&gt;</li>
-                            <li class="content">&lt;footer&gt;</li>
-                            <li class="content">&lt;section&gt;</li>
-                            <li class="content">&lt;nav&gt;</li>
-                            <li class="content">&lt;article&gt;</li>
-                            <li class="content">&lt;aside&gt;</li>
-                            <li class="content">&lt;h1–h6&gt;</li>
-                            <li class="text-content">&lt;div&gt;</li>
-                            <li class="text-content">&lt;p&gt;</li>
-                            <li class="text-content">&lt;pre&gt;</li>
-                            <li class="text-content">&lt;figcaption&gt;</li>
-                            <li class="text-content">&lt;figure&gt;</li>
-                            <li class="text-content">&lt;hr&gt;</li>
-                            <li class="text-content">&lt;ol&gt;</li>
-                            <li class="text-content">&lt;ul&gt;</li>
-                            <li class="text-content">&lt;li&gt;</li>
-
-                            <li class="table">&lt;table&gt;</li>
-                            <li class="table">&lt;tbody&gt;</li>
-                            <li class="table">&lt;tr&gt;</li>
-                            <li class="table">&lt;td&gt;</li>
-                            <li class="form">&lt;form&gt;</li>
-                        </ul>
-                     </section>
-                     <section>
-                         <h2>Elementos dentro de línea (inline)</h2>
-                         <p>Un elemento en línea no se inicia en una nueva línea y sólo ocupa tanto ancho como sea necesario.</p>
-                     </section>
-                     <section>
-                        <h3>Inline Elements</h3>
-                        <ul class="html">
-                            <li class="inline-text">&lt;a&gt;</li>
-                            <li class="inline-text">&lt;abbr&gt;</li>
-                            <li class="inline-text">&lt;code&gt;</li>
-                            <li class="inline-text">&lt;em&gt;</li>
-                            <li class="inline-text">&lt;i&gt;</li>
-                            <li class="inline-text">&lt;span&gt;</li>
-                            <li class="inline-text">&lt;strong&gt;</li>
-                        </ul>
-                     </section>
-                     <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-block@2x.png" alt="">
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-block-style@2x.png" alt="">
-                    </section>
-                </section>
-                <section style="text-align: left;">
-                    <section>
-                        <h2>Listas</h2>
-                        <p></p>
-
-                    </section>
-                    <section>
-                        <p>HTML contiene 3 tipos de elementos para generar listas.</p>
-                        <div style="float: left;">
-                            <h5>Listas ordinales (ordered list)</h5>
-                            <ul class="html">
-                                <li class="text-content">&lt;ol&gt;</li>
-                            </ul>
-                        </div>
-                        <div style="float: left;">
-                        <h5>Listas no ordinales (unordered list)</h5>
-                        <ul class="html">
-                            <li class="text-content">&lt;ul&gt;</li>
-                        </ul>
-                        </div>
-                        <div style="float: left;">
-                        <h5>Listas de descripción (description list)</h5>
-                        <ul class="html">
-                            <li class="text-content">&lt;dl&gt;</li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        </div>
-                    </section>
-                    <section>
-                        <p>Al mismo tiempo, existen 3 etiquetas complementarias</p>
-
-                        <div style="float: left;">
-                        <h5>Items de lsita</h5>
-                        <ul class="html">
-                            <li class="text-content">&lt;li&gt;</li>
-                        </ul>
-                        </div>
-                        <div style="float: left;">
-                        <h5>Item de definición de término</h5>
-                        <ul class="html">
-                            <li class="text-content">&lt;dt&gt;</li>
-                        </ul>
-                        </div>
-                        <div style="float: left;">
-                        <h5>Item de descripción de definición</h5>
-                        <ul class="html">
-                            <li class="text-content">&lt;dd&gt;</li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>Listas ordinales (ordered list)</h2>
-                        <ul class="html">
-                            <li class="text-content">&lt;ol&gt;</li><li class="text-content">&lt;/ol&gt;</li>
-                        </ul>
-
-                        <div class="clearfix"></div>
-                        <dl>
-                            <dt>Etiqueta tipo</dt>
-                            <dd>Contenido de Texto</dd>
-                        </dl>
-                        <dl>
-                            <dt>Función</dt>
-                            <dd>Declara una lista ordenada</dd>
-                        </dl>
-
-                        <div class="clearfix"></div>
-                        <p>Ejemplo:</p>
-                        <pre><code class="html hljs">&lt;ol type=&quot;A&quot;&gt;
-  &lt;li&gt;Ciudad de México&lt;/li&gt;
-  &lt;li&gt;São Paulo&lt;/li&gt;
-  &lt;li&gt;Buenos Aires&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-ol@2x.png" alt="">
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-ol-options.png" alt="">
-                    </section>
-                    <section>
-                        <h2>Listas no ordinales (unordered list)</h2>
-                            <ul class="html">
-                                <li class="text-content">&lt;ol&gt;</li><li class="text-content">&lt;/ol&gt;</li>
-                            </ul>
-
-                            <div class="clearfix"></div>
-                            <dl>
-                                <dt>Etiqueta tipo</dt>
-                                <dd>Contenido de Texto</dd>
-                            </dl>
-                            <dl>
-                                <dt>Función</dt>
-                                <dd>Declara una lista no ordenada</dd>
-                            </dl>
-
-                            <div class="clearfix"></div>
-                            <p>Ejemplo:</p>
-                            <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
-  &lt;li&gt;Theresa May&lt;/li&gt;
-  &lt;li&gt;David Cameron&lt;/li&gt;
-  &lt;li&gt;Gordon Brown&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-ul-options@2x.png" alt="">
-                    </section>
-                    <section>
-                        <h2>Item de lista</h2>
-                            <ul class="html">
-                                <li class="text-content">&lt;li&gt;</li><li class="text-content">&lt;/li&gt;</li>
-                            </ul>
-
-                            <div class="clearfix"></div>
-                            <dl>
-                                <dt>Etiqueta tipo</dt>
-                                <dd>Contenido de Texto</dd>
-                            </dl>
-                            <dl>
-                                <dt>Función</dt>
-                                <dd>Declara un elemento de lista, compatible con listas ordenadas y no ordenadas</dd>
-                            </dl>
-
-                            <div class="clearfix"></div>
-                            <p>Ejemplo:</p>
-                            <pre><code class="html hljs">&lt;ol type=&quot;circle&quot;&gt;
-  &lt;li&gt;Piedra&lt;/li&gt;
-  &lt;li&gt;Papel&lt;/li&gt;
-  &lt;li&gt;Tijera&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                    </section>
-                    <section>
-                        <h2>Listas de descripción (description list)</h2>
-                            <ul class="html">
-                                <li class="text-content">&lt;dl&gt;</li><li class="text-content">&lt;/dl&gt;</li>
-                            </ul>
-
-                            <div class="clearfix"></div>
-                            <dl>
-                                <dt>Etiqueta tipo</dt>
-                                <dd>Contenido de Texto</dd>
-                            </dl>
-                            <dl>
-                                <dt>Función</dt>
-                                <dd>Declara una lista de términos, con una descripción para cada término.</dd>
-                            </dl>
-
-                            <div class="clearfix"></div>
-                            <p>Ejemplo:</p>
-                            <pre><code class="html hljs">&lt;dl&gt;
-  &lt;dt&gt;Nombre:&lt;/dt&gt;
-  &lt;dd&gt;John Connor&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-dl@2x.png" alt="">
-                    </section>
-                    <section>
-                        <h2>Listas anidadas</h2>
-                        <p>En HTML es posible anidar contenido en listas de este modo.</p>
-                        <pre><code class="html hljs">&lt;ol&gt;
-  &lt;li&gt;Aprender HTML&lt;/li&gt;
-  &lt;li&gt;Aprender CSS&lt;/li&gt;
-  &lt;li&gt;
-    Escribir una p&aacute;gina web:
-    &lt;ul&gt;
-      &lt;li&gt;Declarar titulo&lt;/li&gt;
-      &lt;li&gt;Crear un encabezado de p&aacute;gina&lt;/li&gt;
-      &lt;li&gt;Crear un contenido&lt;/li&gt;
-      &lt;li&gt;Crear un pie de p&aacute;gina&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Aprender JavaScript&lt;/li&gt;
-  &lt;li&gt;Publicar mi p&aacute;gina&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                    </section>
-                    <section data-transition="fade-in fade-out">
-                        <img src="images/estructura-documento-html-listas-anidadas@2x.png" alt="">
-                    </section>
-                </section>
-                <section style="text-align: left;">
-                    <h1>Enlances e imágenes</h1>
-                    <ul>
-                        <li><p>Setup</p></li>
-                        <li><p>Links</p></li>
-                        <li><p>Imágenes</p></li>
-                        <li><p>Buenas prácticas con links e imágenes</p></li>
-                    </ul>
                 </section>
                 <section>
+                    <h2></h2>
+                </section>
+                <section>
+                    CSS functions, we make use of it on our everyday activities on the web.
+
+                    El objetivo de la clase de hoy va a ser:
+
+                    Comprender de un mejor modo cómo funciona
+                </section>
+                <section style="text-align: left;">
 
                     <h3>Material de referencia</h3>
                     <ul>
-                        <li>https://css-tricks.com/snippets/css/</li>
-                        <li>http://caniuse.com/</li>
-                        <li>https://www.smashingmagazine.com/learning-css3-useful-reference-guide/</li>
+                        <li>
+                            Selectores
+                            <ul><li>
+                                <a href="https://css-tricks.com/how-css-selectors-work/">https://css-tricks.com/how-css-selectors-work/</a>
+                            </li></ul>
+                        </li>
+                        <li>
+                            Referencia CSS3
+                            <ul><li>
+                                <a href="https://css-tricks.com/snippets/css/" target="_blank">https://css-tricks.com/snippets/css/</a>
+                            </li></ul>
+                        </li>
                     </ul>
 
                 </section>
@@ -764,7 +159,7 @@ que tanto éxito tuvieron en Reino Unido y en Estados Unidos.&lt;/p&gt;</code></
 
         <script src="components/reveal.js/lib/js/head.min.js"></script>
         <script src="components/reveal.js/js/reveal.js"></script>
-
+        <script src="assets/js/custom-reveal.js"></script>
         <script>
             // More info https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({

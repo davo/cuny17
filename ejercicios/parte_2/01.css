@@ -1,0 +1,32 @@
+/* Tabla de contenidos
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Intro HTML 5, CSS 3 y JS
+Clase II: CSS 3
+
+- Propiedades y selectores
+
+*/
+
+/*
+
+En esta regla, body es el selector.
+
+*/
+body {
+  /* Dentro de la regla, van las propiedades */
+  font-family: "Helvetica", Arial, sans-serif;
+  background-color: MidnightBlue;
+  font-size: 16px;
+}
+
+h1 {
+  color: #ffffff;
+  border: 1px solid MediumTurquoise;
+  padding: 15px;
+  font-size: 5em;
+}
+
+p {
+  color: rgb(255,235,205);
+  font-size: 2em;
+}

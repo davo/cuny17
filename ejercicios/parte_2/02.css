@@ -1,0 +1,46 @@
+/* Tabla de contenidos
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Intro HTML 5, CSS 3 y JS
+Clase II: CSS 3
+
+- Cómo se escribe CSS
+
+selector {
+  atributo: valor;
+  atributo: valor;
+  atributo: valor;
+}
+
+
+
+*/
+
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+a:hover {
+
+}
+
+.contenido {
+  display: block;
+  width: 600px;
+}
+
+#titular {
+
+}
+
