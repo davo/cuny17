@@ -24,19 +24,63 @@ En esta regla, body es el selector.
 
 */
 
+
 body {
   /* Dentro de la regla, van las propiedades */
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 16px;
   background-color: #fff;
+  margin: 0px;
+  padding: 0px;
 }
+
+header {
+
+}
+
+nav {
+
+}
+
+ul {
+ /*  width: 90%; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  float: left;
+  width: calc(100% / 9);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.meta {
+}
+
+section {
+    /* TRouBLe */
+  margin: 180px 0px 0px 90px;
+}
+
 
 h1 {
   font-size: 5em;
-  padding: 15px;
+  padding: 0;
+  margin: 0;
   color: #000;
-  /* border: 2px solid MediumTurquoise; */
+  /* border: 1px solid red; */
   letter-spacing: -0.04em;
+  /* margin-left: 180px; */
+
+  line-height: 1em;
 }
 
 h1 {
@@ -46,7 +90,14 @@ h1 {
 p {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 2em;
+  line-height: 1em;
   color: rgb(0,0,0);
+  border: 1px solid red;
+}
+
+.author {
+  padding: 0;
+  margin: 0;
 }
 
 .wired {

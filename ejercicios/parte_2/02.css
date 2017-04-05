@@ -1,46 +1,76 @@
+/*
+
+Hacer comentarios multilinea
+
+*/
+
+
 /* Tabla de contenidos
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 Intro HTML 5, CSS 3 y JS
 Clase II: CSS 3
 
-- Cómo se escribe CSS
+Todo list:
 
-selector {
-  atributo: valor;
-  atributo: valor;
-  atributo: valor;
-}
-
+Quiero que las imagenes se vean bien en mobile
+Quiero compartir esto en twitter y FB
 
 
 */
 
+/*
+
+En esta regla, body es el selector.
+
+*/
+
+
 body {
+  /* Dentro de la regla, van las propiedades */
   font-family: "Helvetica", Arial, sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+    /* TRouBLe */
+  margin: 180px 0px 0px 90px;
 }
 
 h1 {
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  /* border: 1px solid red; */
+  letter-spacing: -0.04em;
+  /* margin-left: 180px; */
 
+  line-height: 1em;
 }
 
-h2 {
-
+h1 {
+  letter-spacing: -3px;
 }
 
 p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  color: rgb(0,0,0);
+  border: 1px solid red;
 
 }
 
-a:hover {
-
+.author {
+  padding: 0;
+  margin: 0;
 }
 
-.contenido {
-  display: block;
-  width: 600px;
-}
-
-#titular {
-
+.wired {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
 }
 

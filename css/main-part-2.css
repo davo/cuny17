@@ -203,7 +203,7 @@ body {
  *********************************************/
 .reveal p {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.9em;
   font-weight: 300;
   width: 50%;
@@ -270,6 +270,10 @@ body {
   margin: 0;
   overflow: hidden;
   list-style: none;
+}
+
+.reveal ul.large {
+  font-size: 1.6em;
 }
 
 .reveal ul.html {
