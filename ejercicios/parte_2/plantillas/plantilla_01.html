@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Plantilla con control de audio</title>
+
+        <link rel="stylesheet" href="../../../components/reveal.js/css/reveal.css">
+
+        <link rel="stylesheet" href="assets/css/plantilla_01.css">
+
+        <script src='../../../components/jquery/dist/jquery.min.js'></script>
+
+    </head>
+    <body>
+        <div class="audio">
+            <audio id="entrevista" controls="controls">
+              <source src="assets/audios/prestamista-bronx.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="reveal">
+            <div class="slides">
+                <section class="slide-aligned-left" data-background-image="https://68.media.tumblr.com/6480328f4dd7fd7dedbda89a442da253/tumblr_obq30198Wb1qggwnvo1_1280.jpg">
+                    <h1>Invisible <br>Wounds</h1>
+                    <p>I'll be partnering with Headstrong Project <br> to tell the stories of American veterans from <br> the wars in Iraq and Afghanistan.</p>
+                    <a href="#" class="navigate-next" id="comenzar">Comenzar</a>
+                </section>
+
+                <section class="slide-aligned-center">
+                    <p>I know that many people have strong opinions about America’s involvement in Iraq and Afghanistan. But as we meet the individuals behind the uniforms, and seek to understand their stories, I’m hoping we can momentarily put those politics aside. This is a great group of people who served and sacrificed at the request of their country. And I’m very thankful that they’ve volunteered to share their stories.</p>
+                </section>
+
+                <section data-background-image="assets/images/tim-marshall-222944.jpg" class="background-content">
+                    <h2>Imágenes</h2>
+                </section>
+
+
+
+
+            </div>
+        </div>
+
+        <script src="../../../components/reveal.js/lib/js/head.min.js"></script>
+        <script src="../../../components/reveal.js/js/reveal.js"></script>
+        <script>
+
+            $(document).ready(function() {
+
+                var entrevista = $('#entrevista');
+
+                $('#comenzar').click(function() {
+                    // console.log('W?')
+                    entrevista.trigger("play");
+                });
+
+            });
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                controls: false,
+                center: true,
+                progress: false,
+                width: "100%",
+                height: "100%"
+            });
+        </script>
+    </body>
+</html>
