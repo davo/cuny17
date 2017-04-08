@@ -22,22 +22,20 @@
         <div class="reveal">
             <div class="slides">
                 <section class="slide-aligned-left" data-background-image="https://images.unsplash.com/photo-1476900966873-ab290e38e3f7?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=">
-                    <h1>Plantilla con <br>cambio de slide automático</h1>
+                    <h1>Invisible <br>Wounds</h1>
                     <p>“I went over there <br> to provide those people <br> with basic human freedoms.”</p>
                     <a href="#" class="navigate-next" id="comenzar">Comenzar</a>
                 </section>
 
-                <!-- Cada slide se cambia automáticamente utilizando segundos, en el siguiente caso, 5 segundos (expresado 5000 milisegundos) -->
-
-                <section class="slide-aligned-center" data-autoslide="5000">
+                <section class="slide-aligned-center" data-slide-time="10">
                     <p>I know that many people have strong opinions about America’s involvement in Iraq and Afghanistan. But as we meet the individuals behind the uniforms, and seek to understand their stories, I’m hoping we can momentarily put those politics aside. This is a great group of people who served and sacrificed at the request of their country. And I’m very thankful that they’ve volunteered to share their stories.</p>
                 </section>
 
-                <section class="slide-aligned-center" data-autoslide="20000">
+                <section class="slide-aligned-center" data-slide-time="10">
                     <p>My father was a platoon sergeant in the Pennsylvania National Guard. But nobody ever thought I’d join the military. I was too sensitive. I was into painting and illustration and theater. Plus I was a total goofball. I barely finished high school. I didn’t have any direction.</p>
                 </section>
 
-                <section class="slide-aligned-center" data-autoslide="15000">
+                <section class="slide-aligned-center" data-slide-time="20">
                     <h2>“I was an art student. I loved the human body. I always thought it was so beautiful.”</h2>
                 </section>
 
@@ -52,6 +50,9 @@
 
 
             $(document).ready(function() {
+
+                // Creo una variable para guardar el tiempo indicado en cada slide.
+                var setTime;
                 // Selecciono el objeto de audio.
                 var entrevista = $('#entrevista');
                 // Extraigo la duración.
@@ -63,6 +64,11 @@
                 $('#comenzar').on('click', function() {
                     entrevista.trigger('play');
                 });
+
+                // Función para ejecutar siguiende slide.
+                function changeSlide() {
+                    Reveal.next();
+                }
 
                 // Listener o evento que detecta si hubo un cambio en slide.
                 Reveal.addEventListener( 'slidechanged', function(event, setTime) {
@@ -78,8 +84,18 @@
                         entrevista.trigger('play');
                     }
 
+                    // Extraigo la duración del slide
+                    setTime = event.currentSlide.getAttribute('data-slide-time') * 1000;
+
+                    // Cambio el slide en función al tiempo declarado.
+                    setTimeout(changeSlide, setTime)
+
+
+
                 });
 
+                // Listener o evento que extrae el tiempo actual del audio.
+                // Sin función actualmente.
                 entrevista.on('timeupdate', function() {
                     posicion = entrevista.prop('currentTime');
                 });
@@ -92,7 +108,7 @@
                 history: false,
                 controls: false,
                 center: true,
-                progress: true,
+                progress: false,
                 width: "100%",
                 height: "100%"
             });
