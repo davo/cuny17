@@ -27,15 +27,15 @@
                     <a href="#" class="navigate-next" id="comenzar">Comenzar</a>
                 </section>
 
-                <section class="slide-aligned-center" data-slide-time="10">
+                <section class="slide-aligned-center">
                     <p>I know that many people have strong opinions about America’s involvement in Iraq and Afghanistan. But as we meet the individuals behind the uniforms, and seek to understand their stories, I’m hoping we can momentarily put those politics aside. This is a great group of people who served and sacrificed at the request of their country. And I’m very thankful that they’ve volunteered to share their stories.</p>
                 </section>
 
-                <section class="slide-aligned-center" data-slide-time="10">
+                <section class="slide-aligned-center">
                     <p>My father was a platoon sergeant in the Pennsylvania National Guard. But nobody ever thought I’d join the military. I was too sensitive. I was into painting and illustration and theater. Plus I was a total goofball. I barely finished high school. I didn’t have any direction.</p>
                 </section>
 
-                <section class="slide-aligned-center" data-slide-time="20">
+                <section class="slide-aligned-center">
                     <h2>“I was an art student. I loved the human body. I always thought it was so beautiful.”</h2>
                 </section>
 
@@ -51,8 +51,11 @@
 
             $(document).ready(function() {
 
-                // Creo una variable para guardar el tiempo indicado en cada slide.
-                var setTime;
+                // Array para guardar el tiempo en el momento que cambiamos cada slide.
+                // Cada valor en el array esta expresado en segundos acumulados.
+                var tiempoTransicion = [15, 30, 64, 203, 403];
+                // Posición del array tiempoTransicion
+                var marcaActual = 0;
                 // Selecciono el objeto de audio.
                 var entrevista = $('#entrevista');
                 // Extraigo la duración.
@@ -64,11 +67,6 @@
                 $('#comenzar').on('click', function() {
                     entrevista.trigger('play');
                 });
-
-                // Función para ejecutar siguiende slide.
-                function changeSlide() {
-                    Reveal.next();
-                }
 
                 // Listener o evento que detecta si hubo un cambio en slide.
                 Reveal.addEventListener( 'slidechanged', function(event, setTime) {
@@ -84,20 +82,23 @@
                         entrevista.trigger('play');
                     }
 
-                    // Extraigo la duración del slide
-                    setTime = event.currentSlide.getAttribute('data-slide-time') * 1000;
-
-                    // Cambio el slide en función al tiempo declarado.
-                    setTimeout(changeSlide, setTime)
-
-
-
                 });
+
+
+
+                // Función para ejecutar siguiende slide.
+                function cambiarSlide() {
+                    Reveal.next();
+                    marcaActual += 1;
+                }
 
                 // Listener o evento que extrae el tiempo actual del audio.
                 // Sin función actualmente.
                 entrevista.on('timeupdate', function() {
                     posicion = entrevista.prop('currentTime');
+                    if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
+                        cambiarSlide();
+                    }
                 });
 
 
