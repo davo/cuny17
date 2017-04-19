@@ -14,8 +14,9 @@
 
     </head>
     <body>
+
         <div class="audio">
-            <audio id="entrevista" controls="controls">
+            <audio id="entrevista" controls>
               <source src="assets/audios/prestamista-bronx.mp3" type="audio/mpeg">
             </audio>
         </div>
@@ -28,6 +29,7 @@
                 </section>
 
                 <section class="slide-aligned-center">
+                    <p>I know that many people have strong opinions about America’s involvement in Iraq and Afghanistan. But as we meet the individuals behind the uniforms, and seek to understand their stories, I’m hoping we can momentarily put those politics aside. This is a great group of people who served and sacrificed at the request of their country. And I’m very thankful that they’ve volunteered to share their stories.</p>
                     <p>I know that many people have strong opinions about America’s involvement in Iraq and Afghanistan. But as we meet the individuals behind the uniforms, and seek to understand their stories, I’m hoping we can momentarily put those politics aside. This is a great group of people who served and sacrificed at the request of their country. And I’m very thankful that they’ve volunteered to share their stories.</p>
                 </section>
 
@@ -51,9 +53,12 @@
 
             $(document).ready(function() {
 
+
+
                 // Array para guardar el tiempo en el momento que cambiamos cada slide.
                 // Cada valor en el array esta expresado en segundos acumulados.
-                var tiempoTransicion = [15, 30, 64, 203, 403];
+                var tiempoTransicion = [15, 30, 64, 203, 109, 15, 30, 64, 203, 109];
+
                 // Posición del array tiempoTransicion
                 var marcaActual = 0;
                 // Selecciono el objeto de audio.
@@ -62,6 +67,9 @@
                 var duracion = entrevista.prop('duration');
                 // Extraigo la posición actual del audio.
                 var posicion = entrevista.prop('currentTime');
+
+                entrevista.controls = false;
+
 
                 // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
                 $('#comenzar').on('click', function() {
@@ -95,6 +103,9 @@
                 // Listener o evento que extrae el tiempo actual del audio.
                 // Sin función actualmente.
                 entrevista.on('timeupdate', function() {
+
+                    console.log(posicion);
+
                     posicion = entrevista.prop('currentTime');
                     if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
                         cambiarSlide();

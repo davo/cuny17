@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Plantilla para presentar contenido</title>
+
+
+        <link rel="stylesheet" href="assets/css/plantilla_04.css">
+
+        <script src='../../../components/jquery/dist/jquery.min.js'></script>
+
+    </head>
+    <body>
+        <article class="articulo">
+            <header class="encabezado">
+                <h1>“I went over there to provide those people with basic human freedoms.”</h1>
+                <p class="equipo">Constanza Gallardo, Mónica Cordero y Alma Sacasa</p>
+            </header>
+            <div class="contenedor">
+                <p>Fox News host Bill O’Reilly announced on Tuesday that he was taking a vacation to an unspecified location, effective immediately — a move that comes as dozens of advertisers flee his program, The O’Reilly Factor, over accusations of sexual misconduct.</p>
+                <p>O’Reilly framed the break as consistent with what he has done every spring. "Often around this time of year, I grab some vacation because it’s spring and Easter time,” he said on Tuesday’s show, claiming that he booked the trip in the fall. A Fox spokesperson said that O’Reilly will return on April 24.</p>
+                <p>Lisa Bloom, the attorney for Wendy Walsh, a psychologist and radio host who alleges that in 2013 O’Reilly withdrew an offer to be a Fox contributor after she rebuffed his sexual advances, does not buy that explanation. “I have no reason to believe the vacation is real, and every reason to believe it's a cover,” Bloom told The Outline.</p>
+            </div>
+        </article>
+
+
+        <script>
+
+
+            $(document).ready(function() {
+
+
+                var obtenerImagen = $('.article').data('background-image');
+
+
+
+
+                // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
+                $('#comenzar').on('click', function() {
+                    entrevista.trigger('play');
+                });
+
+
+
+            });
+        </script>
+    </body>
+</html>
