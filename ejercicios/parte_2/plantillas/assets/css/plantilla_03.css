@@ -15,7 +15,7 @@
 .audio {
   position: absolute;
   z-index: 1000;
-  bottom: 20px;
+  top: 20px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -31,8 +31,24 @@ audio {
   width: 800px;
 }
 
+.reveal .fondo {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  z-index: -1;
+  top: -50%;
+}
+
+.reveal .fondo-uno {
+  background-color: rgba(255,255,0,0.5);
+}
+
+.reveal .fondo-dos {
+  background-color: rgba(255,40,0,0.5);
+}
+
 .reveal h1 {
-  font-family: 'Nixie One', serif; !important;
+  font-family: 'Nixie One', serif !important;
   letter-spacing: -1.2em;
   text-align: left;
   line-height: 1.055em !important; }

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Intro a JavaScript</title>
+        <title>Intro a JavaScript (y jQuery)</title>
 
         <link rel="stylesheet" href="components/reveal.js/css/reveal.css">
 
@@ -12,8 +12,8 @@
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="components/highlight/src/styles/xcode.css">
 
-        <link rel="stylesheet" href="css/main-part-2.css">
-        <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
         <script src='components/jquery/dist/jquery.min.js'></script>
         <script src='components/gsap/src/minified/TweenMax.min.js' type="text/javascript" charset="utf-8"></script>
         <script src='assets/js/SplitText.min.js' type="text/javascript" charset="utf-8"></script>
@@ -22,184 +22,94 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section style="text-align: left;" data-menu-title="Intro">
-                    <h1>Parte 3: JavaScript (+jQuery)</h1>
-                    <h3>CUNY 2017</h3>
+                <section style="text-align: left;" data-menu-title="Intro"  data-state="intro">
+                    <h1>Parte 3: JavaScript</h1>
+                    <h2>CUNY 2017</h2>
+                </section>
+
+
+                <section style="text-align: left;" data-state="seccion">
+                    <section>
+                        <h3>Qué vamos a ver</h3>
+                        <ul>
+                            <li><p>Fundamentos de JavaScript</p></li>
+                            <li><p>Modificando el DOM</p></li>
+                            <li><p>Eventos con JS</p></li>
+                            <li><p>Introducción a jQuery</p></li>
+                            <li><p>Plugins de jQuery</p></li>
+                        </ul>
+                    </section>
                 </section>
 
 
                 <section style="text-align: left;">
-                     <section>
-                        <h2>Recapitulación</h2>
-                        <ul>
-                            <li><h4>Repasemos lo que vimos en HTML 5</h4></li>
-                            <li><h4>Introducción a CSS</h4></li>
-                            <li><h4>Sintaxis básica</h4></li>
-                        </ul>
+                    <section>
+                        <h2>Fundamentos de  JavaScript</h2>
                     </section>
                     <section>
-                        <h2>Selectores CSS</h2>
-                        <ul>
-                            <li><h4>Selectores de identidad (id)</h4></li>
-                            <li><h4>Selectores de clases (class)</h4></li>
-                            <li><h4>Selectores de etiqueta</h4></li>
-                            <li><h4>Otros tipos de selectores</h4></li>
-                            <li><h4>Especificidades de los selectores</h4></li>
-                        </ul>
+                        <p><span class="highlight">HTML</span>, <span class="highlight">CSS</span>, y <span class="highlight">JavaScript</span> son los principales lenguajes que hacen que la web funcione.</p>
                     </section>
 
                     <section>
-                        <h3>Modelo de caja, bordes y fondos</h3>
-                        <ul>
-                            <li><h4>Modelo de caja</h4></li>
-                            <li><h4>Bordes de objetos</h4></li>
-                            <li><h4>Propiedades de fondos</h4></li>
-                        </ul>
+                        <p><span>HTML</span> es para agregar <span class="highlight">markup</span> al contenido.</p>
                     </section>
                     <section>
-                        <h3>Posicionamiento y elementos flotantes</h3>
-                        <ul>
-                            <li><h4>Posicionamiento</h4></li>
-                            <li>
-                                <h4>Elementos flotantes</h4>
-                            </li>
-                            <li>
-                                <h4>Rompiendo el flujo de HTML</h4>
-                            </li>
-                        </ul>
+                        <p><span>CSS</span> es para darle <span class="highlight">formato</span> y <span class="highlight">estilo</span> al contenido marcado.</p>
                     </section>
                     <section>
-                        <h3>Librerías CSS</h3>
-                        <ul>
-                            <li><h4>Bootstrap</h4></li>
-                            <li><h4>Foundation</h4></li>
-                            <li><h4>Tachyons</h4></li>
-                        </ul>
+                        <p><span>JavaScript</span> es para darle <span class="highlight">interacción</span> al formato y el contenido marcado.</p>
+                    </section>
+                    <section style="text-align: center;">
+                        <img src="images/html-css-javascript-905348.png">
                     </section>
                     <section>
-
-                        <h3>Diseño en la web</h3>
-
+                        <h2>¿Cómo funciona cada uno?</h2>
                     </section>
                     <section>
-                        <h2>Media Queries y diseño web responsivo</h2>
-                    </section>
-                </section>
-
-                <section style="text-align: left;">
-                    <section>
-                        <h2>Introducción a CSS 3</h2>
+                        <h3>HTML</h3>
+                        <p>Puedes marcar una ejecución particular de texto como un párrafo con este HTML:</p>
+                        <pre class="fragment"><code class="html"><p id='parrafo'>Este es un párrafo.</p></code></pre>
                     </section>
                     <section>
-                        <h3>CSS: Conceptos básicos</h3>
-                        <p>Cascading Stylesheets (CSS) es la tecnología que usamos para darle <span class="highlight">diagramación y estilo</span> a nuestras páginas web.</p>
-                    </section>
-                    <section>
-                        <h3>¿Cómo CSS afecta un documento HTML?</h3>
-                        <p>Los navegadores aplican las reglas CSS a un documento modificando el modo en el que lo presenta.</p>
-                        <p>Aprendamos cómo se forma una <strong>regla CSS</strong></p>
-                    </section>
-                    <section>
-                        <h3>Composición de un reglas CSS</h3>
-                        <ul>
-                            <li><p><strong>Propiedades</strong>: Un conjunto de propiedades, que tienen valores, los cuales modifican como el HTML es presentado.</p></li>
-                            <li><p><strong>Selectores:</strong> Un selector, el cual selección uno o varios elementos para aplicar las valores del conjunto de propiedades.</p></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Demo</h3>
-                        <h3>Abrir los siguientes archivos:</h3>
-                        <ul class="large">
-                            <li><p>ejercicios/parte_2/01.html</p></li>
-                            <li><p>ejercicios/parte_2/01.css</p></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Conclusión I</h3>
-                        <p>Escribir CSS es crear <strong>reglas</strong> de <strong>diagramación</strong> y <strong>diseño</strong></p>
-                    </section>
-                </section>
-                <section style="text-align: left;">
-                    <section>
-                        <h2>¿Cómo escribimos de CSS?</h2>
-                    </section>
-                    <section>
-                        <h3>Abrir los siguientes archivos:</h3>
-                        <ul class="large">
-                            <li><p>ejercicios/parte_2/02.html</p></li>
-                            <li><p>ejercicios/parte_2/02.css</p></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <p>La sintaxis de CSS consisten en crear un <strong>selector</strong> y luego agregar <strong>propiedades</strong> a ese selector</p>
-                    </section>
-                    <section>
-                        <pre><code class="html hljs">h1 {
-  color: #ffffff;
-  border: 1px solid MediumTurquoise;
-  padding: 15px;
-  font-size: 5em;
+                        <h3>CSS</h3>
+                        <p>Luego, puedes especificar el tamaño y color del párrafo con algo de CSS:</p>
+                        <pre class="fragment"><code class="css">p {
+    font-size: 20px;
+    color: blue;
 }</code></pre>
                     </section>
-                </section>
-                <section style="text-align: left;">
-                    <h2>Selección de ejemplos</h2>
                     <section>
-                        <h2>Demos</h2>
-                        <section><h3><a href="http://species-in-pieces.com/" target="_blank">http://species-in-pieces.com/</a></h3></section>
-                        <section><h3><a href="http://curvy.dk/beagle/site/" target="_blank">http://curvy.dk/beagle/site/</a></h3></section>
-                        <section><h3><a href="http://norgram.co/" target="_blank">http://norgram.co/</a></h3></section>
-                        <section><h3><a href="http://fff.cmiscm.com/#!/main" target="_blank">http://fff.cmiscm.com/#!/main</a></h3></section>
-                        <section><h3><a href="https://www.technologyreview.com/" target="_blank">https://www.technologyreview.com/</a></h3></section>
-                        <section><h3><a href="https://www.supremo.tv/typeterms/" target="_blank">https://www.supremo.tv/typeterms/</a></h3></section>
-                        <section><h3><a href="http://michaelchatten.com/demosites/laf/" target="_blank">http://michaelchatten.com/demosites/laf/</a></h3></section>
-                        <section><h3><a href="http://anagram.paris/" target="_blank">http://anagram.paris/</a></h3></section>
-                        <section><h3><a href="http://ultra.studio/" target="_blank">http://ultra.studio/</a></h3></section>
+                        <h3>JavaScript</h3>
+                        <p>Y si nos queremos poner exquisitos, podemos re-escribir el párrafo cuando el usuario clickea, con algo de JavaScript</p>
+                        <pre class="fragment"><code class="javaScript">var p = document.getElementById('parrafo');
+
+    p.addEventListener('click', function(event) {
+      p.innerHTML = 'Hiciste click en este párrafo.';
+    });</code></pre>
+                    </section>
+                    <section>
+                        <h3>Conclusión</h3>
+                        <p>HTML, CSS y JavaScript son lenguajes totalmente diferentes.</p>
+                        <p>La mayoría de los sitios web dependen de los tres, pero la apariencia de cada sitio está determinada por HTML y CSS.</p>
+
                     </section>
                 </section>
 
-                <section style="text-align: left;">
-                    <h2>Colores</h2>
-                    <ul>
-                        <li>
-                            <h4>Hexagesimales, RGB y colores RGBa</h4>
-                        </li>
-                    </ul>
-                </section>
-                <section>
 
-                </section>
-                <section style="text-align: left;">
 
-                    <h3>Material de referencia</h3>
-                    <ul>
-                        <li>
-                            Selectores
-                            <ul><li>
-                                <a href="https://css-tricks.com/how-css-selectors-work/">https://css-tricks.com/how-css-selectors-work/</a>
-                            </li></ul>
-                        </li>
-                        <li>
-                            Referencia CSS3
-                            <ul>
-                                <li><a href="https://www.acamica.com/cursos/25/comenzando-con-css">https://www.acamica.com/cursos/25/comenzando-con-css</a></li>
-                                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS">https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS</a></li>
-                                <li>
-                                    <a href="https://css-tricks.com/snippets/css/" target="_blank">https://css-tricks.com/snippets/css/</a>
-                                </li>
-                                <li><a href="https://alistapart.com/topic/code/css/">https://alistapart.com/topic/code/css/</a></li>
-                                <li>Referencia: <a href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a></li></ul>
-                        </li>
-                    </ul>
 
+                <section style="text-align: left;" data-state="seccion">
+                    Sintaxis de J
                 </section>
+
+
+
 
             </div>
         </div>
 
         <script src="components/reveal.js/lib/js/head.min.js"></script>
         <script src="components/reveal.js/js/reveal.js"></script>
-        <script src="assets/js/custom-reveal.js"></script>
         <script>
             // More info https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({

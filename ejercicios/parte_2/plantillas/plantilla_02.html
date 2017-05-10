@@ -57,7 +57,7 @@
                 // Extraigo la duración.
                 var duracion = entrevista.prop('duration');
                 // Extraigo la posición actual del audio.
-                var posicion = entrevista.prop('currentTime');
+                var posicion;
 
                 // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
                 $('#comenzar').on('click', function() {
@@ -81,7 +81,8 @@
                 });
 
                 entrevista.on('timeupdate', function() {
-                    posicion = entrevista.prop('currentTime');
+                    posicion = Math.round(entrevista.prop('currentTime'));
+                    console.log(posicion);
                 });
 
 

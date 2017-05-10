@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="../../../components/reveal.js/css/reveal.css">
 
-        <link rel="stylesheet" href="assets/css/plantilla_02.css">
+        <link rel="stylesheet" href="assets/css/plantilla_03.css">
 
         <script src='../../../components/jquery/dist/jquery.min.js'></script>
 
@@ -26,6 +26,7 @@
                     <h1>Invisible <br>Wounds</h1>
                     <p>“I went over there <br> to provide those people <br> with basic human freedoms.”</p>
                     <a href="#" class="navigate-next" id="comenzar">Comenzar</a>
+                    <div class="fondo fondo-dos"></div>
                 </section>
 
                 <section class="slide-aligned-center">
@@ -57,7 +58,8 @@
 
                 // Array para guardar el tiempo en el momento que cambiamos cada slide.
                 // Cada valor en el array esta expresado en segundos acumulados.
-                var tiempoTransicion = [15, 30, 64, 203, 109, 15, 30, 64, 203, 109];
+                var tiempoTransicion = [15, 30, 64, 203, 400];
+
 
                 // Posición del array tiempoTransicion
                 var marcaActual = 0;
@@ -66,7 +68,7 @@
                 // Extraigo la duración.
                 var duracion = entrevista.prop('duration');
                 // Extraigo la posición actual del audio.
-                var posicion = entrevista.prop('currentTime');
+                var posicion;
 
                 entrevista.controls = false;
 
@@ -104,11 +106,19 @@
                 // Sin función actualmente.
                 entrevista.on('timeupdate', function() {
 
+                    posicion = Math.round(entrevista.prop('currentTime'));
+
                     console.log(posicion);
 
-                    posicion = entrevista.prop('currentTime');
-                    if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
-                        cambiarSlide();
+
+                    // if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
+                    //     cambiarSlide();
+                    // }
+
+                    if (posicion > 0) {
+                        if (posicion >= tiempoTransicion[marcaActual]) {
+                            cambiarSlide();
+                        }
                     }
                 });
 
@@ -122,7 +132,8 @@
                 center: true,
                 progress: false,
                 width: "100%",
-                height: "100%"
+                height: "100%",
+                margin: 0
             });
         </script>
     </body>
