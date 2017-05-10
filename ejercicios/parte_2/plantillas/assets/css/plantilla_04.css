@@ -173,7 +173,7 @@ img {
  .articulo {
   display: block;
   width: 100%;
-  background: url('https://images.unsplash.com/photo-1478472190689-fa020c20809a?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');
+  background: url('../images/495A8004.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -181,12 +181,34 @@ img {
  }
 
  .encabezado {
+  height: 80vh;
   padding: 200px 350px;
  }
 
  .contenedor {
   padding: 100px 350px;
   background: #fff;
+ }
+.contenedor-foto {
+  margin: 0;
+  padding: 0px 0px;
+  background: #fff;
+  text-align: center;
+ }
+ .foto-texto {
+  display: block;
+  width: 90%;
+  padding: 12px 0;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+ }
+ .foto-texto.grande {
+  width: 90%;
+ }
+ .foto-texto.chico {
+  width: 50%;
  }
 
 .contenedor-video {
@@ -234,3 +256,4 @@ img {
   float: right;
   margin-right: -180px;
  }
+
