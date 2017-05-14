@@ -210,7 +210,6 @@ img {
  }
 
 .contenedor-video {
-  padding: 0px 200px;
   min-height: 720px;
   background: #ffffff;
   text-align: center;
@@ -260,6 +259,9 @@ img {
   .encabezado, .contenedor {
     padding: 50px 50px;
   }
+  .contenedor-video {
+    padding: 0;
+  }
   h2 {
     font-size: 1.5em;
     text-align: left;
@@ -283,6 +285,9 @@ img {
   }
   .contenedor {
       padding: 100px 200px;
+  }
+  .contenedor-video {
+    padding: 0px 200px;
   }
   h2 {
     font-size: 2.5em;
